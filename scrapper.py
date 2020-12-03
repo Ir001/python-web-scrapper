@@ -23,7 +23,22 @@ for job_elem in job_elems:
     print(location, end='\n'*2)
     page_job = requests.get(job_link)
     content = BeautifulSoup(page_job.content, 'html.parser')
-    job_description = content.find('div', class_='job_req')
-    print(job_description)
+    page_detail = content.find('div', class_='job-detail')
+    job_requirement = page_detail.find('div', class_='job_req')
+    job_description = page_detail.find('div', class_='job_desc')
+    top_panel = page_detail.find_all('div', class_='row')
+    experience = top_panel[0].find('h4').find('span').get_text()
+    category = top_panel[0].find_all('h4')[1].find('a').get_text()
+    posted_at = top_panel[3].find_all('p')[0].get_text()
+    deadline = top_panel[3].find_all('p')[1].get_text()
+    
+    about_company = content.find_all('div',class_='about-company')[1].get_text()
+    company_panel = content.find('div',class_='company-profile').find('div',class_='panel-body')
+    industry = company_panel.find_all('p')[0].find('span').get_text()
+    size_company = company_panel.find_all('p')[1].find('b').get_text()
+    office_address = company_panel.find_all('p')[2].find('b').get_text()
+    
+    link_apply = content.find('div',class_='modal-modren').find('form').attrs['action']
+    
     sys.exit()
     
