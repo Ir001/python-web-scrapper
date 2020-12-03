@@ -1,0 +1,2405 @@
+<!DOCTYPE html>
+<!-- [if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> -->
+<!-- [if IE 7] <html class="no-js lt-ie9 lt-ie8" lang=""> -->
+<!-- [if IE 8] <html class="no-js lt-ie9" lang=""> -->
+<!-- [if gt IE 8]><! -->
+<html class="no-js" lang="ID">
+    <!-- <![endif] -->
+    <head>
+        <script src="https://cdn04.jobs.id/asset/jobsid/js/cookie.js"></script>
+        <script src="https://cdn03.jobs.id/asset/jobsid/js/mouseflow_track.js"></script>
+        <script src="https://cdn04.jobs.id/asset/jobsid/js/push_data.js"></script>
+        <script src="https://cdn02.jobs.id/asset/jobsid/js/maiden_call.js?v=201903191031"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            function TrackUserSearch() {
+                try {
+                    if (GetParameterByName("kata-kunci") != "") {
+                        var UserSearchCleanTag = "";
+                        var UserSearchJobGroup = "";
+                        var UserSearchLevelTag = "";
+                        var UserSearchSuperTag = "";
+                        MaidenJobTitle(
+                            "https://api2.jobs.id",
+                            function (output) {
+                                if (output) {
+                                    if (output.data.Result.Clusters !== null) {
+                                        var cluster = output.data.Result.Clusters;
+                                        UserSearchCleanTag += cluster.CleanTag.Cluster.replaceAll("] [", "][");
+                                        UserSearchJobGroup += "[" + cluster.JobGroup.Cluster + "]";
+                                        UserSearchLevelTag += cluster.LevelTag.Cluster;
+                                        UserSearchSuperTag += cluster.SuperTag.Cluster;
+                                        window.cookies.setItem("UserSearchCleanTag", UserSearchCleanTag, 365 * 3);
+                                        window.cookies.setItem("UserSearchJobGroup", UserSearchJobGroup, 365 * 3);
+                                        window.cookies.setItem("UserSearchLevelTag", UserSearchLevelTag, 365 * 3);
+                                        window.cookies.setItem("UserSearchSuperTag", UserSearchSuperTag, 365 * 3);
+                                    }
+                                }
+                            },
+                            GetParameterByName("kata-kunci")
+                        );
+                    }
+                    window.cookies.setItem("UserSearchKeyWord", GetParameterByName("kata-kunci"), 365 * 3);
+                    window.cookies.setItem("UserSearchPath", window.location.pathname.replace("/", ""), 365 * 3);
+                    var data = window.location.pathname.replace("/", "");
+                    var splittedData = data.split("-di-");
+                    if (splittedData.length == 2) {
+                        window.cookies.setItem("UserSearchLocation", splittedData[1], 365 * 3);
+                    }
+                    window.cookies.setItem("UserSearchField", GetParameterByName("bidang"), 365 * 3);
+                    window.cookies.setItem("UserSearchIndustri", GetParameterByName("industri"), 365 * 3);
+                    window.cookies.setItem("UserSearchMinSalary", GetParameterByName("gaji"), 365 * 3);
+                    window.cookies.setItem("UserSearchFreshGraduate", GetParameterByName("fresh"), 365 * 3);
+                } catch (err) {}
+            }
+
+            window.addEventListener(
+                "load",
+                function () {
+                    try {
+                        window.cookies.sDomain = window.location.hostname.replace("www", "").replace("m", "");
+                        window.cookies.setItem("userId", "", 365 * 3);
+                        window.cookies.setItem("userWorkExp", "", 365 * 3);
+                        window.cookies.setItem("userExpectedSalary", "", 365 * 3);
+                        var employments = JSON.parse(decodeHTML(""));
+                        var CleanTag = "";
+                        var JobGroup = "";
+                        var LevelTag = "";
+                        var SuperTag = "";
+                        for (var i = 0; i < employments.length; i++) {
+                            MaidenJobTitle(
+                                "https://api2.jobs.id",
+                                function (output) {
+                                    if (output) {
+                                        if (output.data.Result.Clusters !== null) {
+                                            var cluster = output.data.Result.Clusters;
+                                            CleanTag += cluster.CleanTag.Cluster.replaceAll("] [", "][");
+                                            JobGroup += "[" + cluster.JobGroup.Cluster + "]";
+                                            LevelTag += cluster.LevelTag.Cluster;
+                                            SuperTag += cluster.SuperTag.Cluster;
+                                            window.cookies.setItem("userCleanTag", CleanTag, 365 * 3);
+                                            window.cookies.setItem("userJobGroup", JobGroup, 365 * 3);
+                                            window.cookies.setItem("userLevelTag", LevelTag, 365 * 3);
+                                            window.cookies.setItem("userSuperTag", SuperTag, 365 * 3);
+                                        }
+                                    }
+                                },
+                                employments[i].job.job_title
+                            );
+                        }
+                    } catch (err) {}
+                    window.cookies.setItem("SERVER_TYPE", "B", 365 * 3);
+                    pushData("apply");
+                    pushData("registration");
+                },
+                false
+            );
+
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            if (0 != 0) {
+                window.dataLayer = window.dataLayer || [];
+                dataLayer.push({ userId: 0 });
+            }
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            // Google Tag Manager
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-M6H6B5J");
+            // End Google Tag Manager
+
+            //]]>
+        </script>
+        <title>Lamar Lowongan Accounting Staff di Riau Sakti United Plantations PT 2020 | Jobs.id</title>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta name="theme-color" content="#000080" />
+        <meta name="msapplication-navbutton-color" content="#000080" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000080" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@jobsdotid" />
+        <meta name="twitter:title" content="Lamar Lowongan Accounting Staff  di Riau Sakti United Plantations PT 2020 | Jobs.id" />
+        <meta name="twitter:description" content="Lamar sekarang lowongan kerja Accounting Staff di Riau Sakti United Plantations PT 2020. Hubungi perusahaan impianmu sekarang, dengan melamar online di Jobs.id!" />
+        <meta name="twitter:image" content="https://cdn02.jobs.id/asset/jobsid/img/jobsid-twitter-card.png" />
+        <meta name="google-site-verification" content="evh9Q3B5Z6Z62-fO6FbQDk9ISikw-wy_01js77_qXV0" />
+        <meta
+            name="keywords"
+            content="Lowongan Kerja Accounting Staff, Lowongan Kerja Riau Sakti United Plantations PT, Loker Accounting Staff, Lowongan Kerja Terbaru, Info Lowongan Kerja, Loker 2020, Lowongan Kerja 2020, Pos Kerja, Lowongan Kerja Indragiri Hilir, Cari Kerja, Lowongan Kerja Hari Ini"
+        />
+        <meta name="description" content="Lamar sekarang lowongan kerja Accounting Staff di Riau Sakti United Plantations PT 2020. Hubungi perusahaan impianmu sekarang, dengan melamar online di Jobs.id!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.jobs.id/lowongan/MTU2OTE3/accounting-staff-riau-sakti-united-plantations-pt" />
+        <meta property="og:site_name" content="Jobs.id" />
+        <meta property="og:title" content="Lamar Lowongan Accounting Staff  di Riau Sakti United Plantations PT 2020 | Jobs.id" />
+        <meta property="og:description" content="Lamar sekarang lowongan kerja Accounting Staff di Riau Sakti United Plantations PT 2020. Hubungi perusahaan impianmu sekarang, dengan melamar online di Jobs.id!" />
+        <meta property="og:image" content="https://cdn02.jobs.id/asset/jobsid/img/jobsid-twitter-card.png" />
+        <link rel="alternate" href="https://m.jobs.id/lowongan/MTU2OTE3/accounting-staff-riau-sakti-united-plantations-pt" />
+        <link rel="canonical" href="https://www.jobs.id/lowongan/MTU2OTE3/accounting-staff-riau-sakti-united-plantations-pt" />
+        <link href="https://cdn04.jobs.id/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="/osd.xml" rel="search" type="application/opensearchdescription+xml" title="Jobs.id" />
+        <link href="https://cdn02.jobs.id/asset/jobsid/build/css/site-0e56834b20.min.css" rel="stylesheet" />
+        <script src="//tw.netcore.co.in/smartechclient.js"></script>
+        <noscript>
+            <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css" />
+            <link href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.min.css" rel="stylesheet" type="text/css" />
+            <link href="https://cdn02.jobs.id/asset/jobsid/css/angular.css" rel="stylesheet" />
+        </noscript>
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "Jobs.id",
+                "legalName": "Jobs.id",
+                "url": "https://www.jobs.id/",
+                "logo": "https://cdn02.jobs.id/asset/jobsid/img/large-logo-new.png",
+                "foundingDate": "2014",
+                "founders": {
+                    "@type": "Person",
+                    "name": "Veronika Linardi"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Wisma Barito Pacific Tower B Lantai 9, Jalan Letjen. S. Parman Kav. 62-63, Palmerah, Slipi, RT.8/RW.4, RT.8/RW.4",
+                    "addressLocality": "Jakarta Barat",
+                    "addressRegion": "Daerah Khusus Ibukota Jakarta",
+                    "postalCode": "11410",
+                    "addressCountry": "ID"
+                },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "customer support",
+                    "telephone": "+622150607500",
+                    "email": "support@jobs.id"
+                },
+                "sameAs": ["https://www.facebook.com/Jobs.id", "https://twitter.com/JobsDotId", "https://www.linkedin.com/in/jobsid?originalSubdomain=id", "https://www.instagram.com/jobsdotid"]
+            }
+        </script>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            smartech("create", "ADGMOT35CHFLVDHBJNIG50K9697MVHMQKD1C08LKFMKDH4CKHU1G");
+            smartech("register", "ac6531db040cf64573ca8bd7a26adb01");
+            smartech("identify", "");
+
+            //]]>
+        </script>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-180x180-icon.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-152x152-icon.png" />
+        <link rel="apple-touch-icon" sizes="128x128" href="/apple-touch-128x128-icon.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-120x120-icon.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-76x76-icon.png" />
+        <link href="apple-touch-icon.png" rel="/apple-touch-icon" />
+        <style type="text/css">
+            /*<![CDATA[*/
+            #warnFraud p {
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+            #warnFraud img {
+                margin-top: 25px;
+            }
+            #warnFraud .btn {
+                width: 200px;
+                padding: 10px 12px;
+                margin: 15px auto 25px;
+            }
+
+            /*]]>*/
+        </style>
+
+        <noscript>
+            <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+            <link href="https://cdn.jobs.id/asset/rms/js/jQuery-File-Upload-master/css/style.css" rel="stylesheet" />
+            <link href="https://cdn02.jobs.id/asset/rms/js/jQuery-File-Upload-master/css/jquery.fileupload.css" rel="stylesheet" />
+        </noscript>
+        <style type="text/css">
+            /*<![CDATA[*/
+            .bar {
+                height: 18px;
+                background: green;
+            }
+            .progress {
+                box-shadow: none;
+                height: 15px;
+                background-color: #fff;
+                margin-top: 5px;
+                margin-bottom: 10px;
+                position: relative;
+            }
+            .progress:after {
+                content: "";
+            }
+            .progress-bar {
+                height: 12px;
+                border-radius: 4px;
+                position: absolute;
+            }
+            .progress-bar-default {
+                background-color: #d8d8d8;
+                width: 100% !important;
+            }
+            .progress.progress-bar-default:after {
+                content: "";
+            }
+            .progress p {
+                color: #808080;
+                font-size: 12px;
+                text-align: center;
+                margin: 10px 0 0;
+            }
+
+            /*]]>*/
+        </style>
+    </head>
+    <body ng-app="app">
+        <script type="text/javascript">
+            //<![CDATA[
+            (function () {
+                window.document.getElementsByTagName("body")[0].onload = function () {
+                    var css = ["\/\/fonts.googleapis.com\/css?family=Open+Sans:400,600,700,800", "\/\/cdnjs.cloudflare.com\/ajax\/libs\/chosen\/1.4.2\/chosen.min.css", "https:\/\/cdn04.jobs.id\/asset\/jobsid\/css\/angular.css"];
+
+                    css.forEach(function (css) {
+                        var n = window.document.createElement("link");
+                        var t = window.document.getElementsByTagName("head")[0];
+
+                        n.rel = "stylesheet";
+                        n.href = css;
+                        t.appendChild(n);
+                    });
+                };
+            })();
+            //]]>
+        </script>
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6H6B5J" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+        </noscript>
+        <!-- [if lt IE 8] <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p> -->
+        <div class="outdated" id="outdated"></div>
+        <header class="">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-1">
+                            <div class="navbar-header">
+                                <button class="navbar-toggle collapsed btnTracker" data-t-email="guest" data-t-value="open" data-t-tag="clicked" type="button" data-toggle="collapse" data-target="#jobsid-navbar" aria-expanded="false">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <button class="btn-search js-search-trigger hidden-md hidden-lg btnTracker" data-t-email="guest" data-t-value="clicked" data-t-tag="search_mobile" type="button">
+                                    <i class="fa fa-lg fa-search"></i>
+                                </button>
+                                <a class="navbar-brand" href="https://www.jobs.id/">
+                                    <img class="img-responsive" src="https://cdn03.jobs.id/asset/jobsid/img/large-logo-new.png" title="Jobs.id" alt="Jobs.id" style="max-width: 115px;" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-11">
+                            <div class="collapse navbar-collapse text-center" id="jobsid-navbar">
+                                <ul class="nav navbar-nav navbar-right pull-right header-buttons">
+                                    <li>
+                                        <a class="login-modal-trigger progressive-link btnTracker" data-t-email="guest" data-t-value="clicked" data-t-tag="login_button" data-prog-href="#" role="button">
+                                            Masuk
+                                            <span class="triangle-top"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.jobs.id/user/register?context=header_user_register" rel="nofollow">
+                                            Daftar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <button class="btn btn-success btn-sm" onclick="location.href='https://www.jobs.id/employer_account/login?context=header_employer_login'" rel="nofollow">
+                                            Perusahaan
+                                        </button>
+                                    </li>
+                                </ul>
+                                <form class="form-inline inline-form-search-sm hidden-xs hidden-sm" method="POST" action="https://www.jobs.id/jobs/search_redirect" name="header_filter">
+                                    <input type="hidden" name="site" />
+                                    <input type="hidden" name="fresh" value="" />
+                                    <input type="hidden" name="salary" value="" />
+                                    <div class="form-group btnTracker" data-t-email="guest" data-t-value="clicked" data-t-tag="main_posisi_atau_perusahaan_box_clicked">
+                                        <input
+                                            class="form-control"
+                                            id="js-text-search"
+                                            type="text"
+                                            name="keyword"
+                                            submit-on-enter="1"
+                                            placeholder="Posisi atau Perusahaan"
+                                            qf-autocomplete="job_title_company"
+                                            qf-autocorrect="job_title_company"
+                                            autocomplete-append-to="parent"
+                                            data-q="search-keyword"
+                                        />
+                                    </div>
+                                    <div class="form-group btnTracker" data-t-email="guest" data-t-value="clicked" data-t-tag="main_search_box_clicked">
+                                        <input
+                                            class="form-control awesomplete js-form-search-city"
+                                            type="text"
+                                            placeholder="Kota"
+                                            data-list="Bali, Badung, Bangli, Buleleng, Denpasar, Gianyar, Jembrana, Karangasem, Klungkung, Tabanan, Bangka Belitung, Bangka, Bangka Barat, Bangka Selatan, Bangka Tengah, Belitung, Belitung Timur, Pangkal Pinang, Banten, Cilegon, Lebak, Pandeglang, Serang, Tangerang, Tangerang Selatan, Bengkulu, Bengkulu, Bengkulu Selatan, Bengkulu Tengah, Bengkulu Utara, Kaur, Kepahiang, Lebong, Muko Muko, Rejang Lebong, Seluma, DI Yogyakarta, Bantul, Gunung Kidul, Kulon Progo, Sleman, Yogyakarta, DKI Jakarta, Jakarta Barat, Jakarta Pusat, Jakarta Selatan, Jakarta Timur, Jakarta Utara, Kepulauan Seribu, Gorontalo, Boalemo, Bone Bolango, Gorontalo, Gorontalo Utara, Pohuwato, Jambi, Batang Hari, Bungo, Jambi, Kerinci, Merangin, Muaro Jambi, Sarolangun, Sungaipenuh, Tanjung Jabung Barat, Tanjung Jabung Timur, Tebo, Jawa Barat, Bandung, Bandung Barat, Banjar, Bekasi, Bogor, Ciamis, Cianjur, Cimahi, Cirebon, Depok, Garut, Indramayu, Karawang, Kuningan, Majalengka, Pangandaran, Purwakarta, Subang, Sukabumi, Sumedang, Tasikmalaya, Jawa Tengah, Banjarnegara, Banyumas, Batang, Blora, Boyolali, Brebes, Cilacap, Demak, Grobogan, Jepara, Karanganyar, Kebumen, Kendal, Klaten, Kudus, Magelang, Pati, Pekalongan, Pemalang, Purbalingga, Purworejo, Rembang, Salatiga, Semarang, Sragen, Sukoharjo, Surakarta (SOLO), Tegal, Temanggung, Wonogiri, Wonosobo, Jawa Timur, Bangkalan, Banyuwangi, Batu, Blitar, Bojonegoro, Bondowoso, Gresik, Jember, Jombang, Kediri, Lamongan, Lumajang, Madiun, Magetan, Malang, Mojokerto, Nganjuk, Ngawi, Pacitan, Pamekasan, Pasuruan, Ponorogo, Probolinggo, Sampang, Sidoarjo, Situbondo, Sumenep, Surabaya, Trenggalek, Tuban, Tulungagung, Kalimantan Barat, Bengkayang, Kapuas Hulu, Kayong Utara, Ketapang, Kubu Raya, Landak, Melawi, Pontianak, Sambas, Sanggau, Sekadau, Singkawang, Sintang, Kalimantan Selatan, Balangan, Banjar, Banjarbaru, Banjarmasin, Barito Kuala, Hulu Sungai Selatan, Hulu Sungai Tengah, Hulu Sungai Utara, Kotabaru, Tabalong, Tanah Bumbu, Tanah Laut, Tapin, Kalimantan Tengah, Barito Selatan, Barito Timur, Barito Utara, Gunung MAS, Kapuas, Katingan, Kotawaringin Barat, Kotawaringin Timur, Lamandau, Murung Raya, Palangka Raya, Pulang Pisau, Seruyan, Sukamara, Kalimantan Timur, Balikpapan, Berau, Bontang, Kutai Barat, Kutai Kartanegara, Kutai Timur, Paser, Penajam Paser Utara, Samarinda, Kalimantan Utara, Bulungan (BULONGAN), Malinau, Nunukan, Tana Tidung, Tarakan, Kepulauan Riau, Batam, Bintan, Karimun, Kepulauan Anambas, Lingga, Natuna, Tanjung Pinang, Lampung, Bandar Lampung, Lampung Barat, Lampung Selatan, Lampung Tengah, Lampung Timur, Lampung Utara, Mesuji, Metro, Pesawaran, Pesisir Barat, Pringsewu, Tanggamus, Tulang Bawang, Tulang Bawang Barat, WAY Kanan, Maluku, Ambon, Buru, Buru Selatan, Kepulauan ARU, Maluku Barat Daya, Maluku Tengah, Maluku Tenggara, Maluku Tenggara Barat, Seram Bagian Barat, Seram Bagian Timur, Tual, Maluku Utara, Halmahera Barat, Halmahera Selatan, Halmahera Tengah, Halmahera Timur, Halmahera Utara, Kepulauan Sula, Pulau Morotai, Ternate, Tidore Kepulauan, Nanggroe Aceh Darussalam (NAD), Aceh Barat, Aceh Barat Daya, Aceh Besar, Aceh Jaya, Aceh Selatan, Aceh Singkil, Aceh Tamiang, Aceh Tengah, Aceh Tenggara, Aceh Timur, Aceh Utara, Banda Aceh, Bener Meriah, Bireuen, Gayo Lues, Langsa, Lhokseumawe, Nagan Raya, Pidie, Pidie Jaya, Sabang, Simeulue, Subulussalam, Nusa Tenggara Barat (NTB), Bima, Dompu, Lombok Barat, Lombok Tengah, Lombok Timur, Lombok Utara, Mataram, Sumbawa, Sumbawa Barat, Nusa Tenggara Timur (NTT), Alor, Belu, Ende, Flores Timur, Kupang, Lembata, Manggarai, Manggarai Barat, Manggarai Timur, Nagekeo, Ngada, Rote Ndao, Sabu Raijua, Sikka, Sumba Barat, Sumba Barat Daya, Sumba Tengah, Sumba Timur, Timor Tengah Selatan, Timor Tengah Utara, Papua, Asmat, Biak Numfor, Boven Digoel, Deiyai (DELIYAI), Dogiyai, Intan Jaya, Jayapura, Jayawijaya, Keerom, Kepulauan Yapen (YAPEN Waropen), Lanny Jaya, Mamberamo Raya, Mamberamo Tengah, Mappi, Merauke, Mimika, Nabire, Nduga, Paniai, Pegunungan Bintang, Puncak, Puncak Jaya, Sarmi, Supiori, Tolikara, Waropen, Yahukimo, Yalimo, Papua Barat, Fakfak, Kaimana, Manokwari, Manokwari Selatan, Maybrat, Pegunungan Arfak, Raja Ampat, Sorong, Sorong Selatan, Tambrauw, Teluk Bintuni, Teluk Wondama, Riau, Bengkalis, Dumai, Indragiri Hilir, Indragiri Hulu, Kampar, Kepulauan Meranti, Kuantan Singingi, Pekanbaru, Pelalawan, Rokan Hilir, Rokan Hulu, Siak, Sulawesi Barat, Majene, Mamasa, Mamuju, Mamuju Utara, Polewali Mandar, Sulawesi Selatan, Bantaeng, Barru, Bone, Bulukumba, Enrekang, Gowa, Jeneponto, Luwu, Luwu Timur, Luwu Utara, Makassar, Maros, Palopo, Pangkajene Kepulauan, Parepare, Pinrang, Selayar (KEPULAUAN Selayar), Sidenreng Rappang/rapang, Sinjai, Soppeng, Takalar, Tana Toraja, Toraja Utara, Wajo, Sulawesi Tengah, Banggai, Banggai Kepulauan, Buol, Donggala, Morowali, Palu, Parigi Moutong, Poso, Sigi, Tojo Una-una, Toli-toli, Sulawesi Tenggara, Bau-bau, Bombana, Buton, Buton Utara, Kendari, Kolaka, Kolaka Utara, Konawe, Konawe Selatan, Konawe Utara, Muna, Wakatobi, Sulawesi Utara, Bitung, Bolaang Mongondow (BOLMONG), Bolaang Mongondow Selatan, Bolaang Mongondow Timur, Bolaang Mongondow Utara, Kepulauan Sangihe, Kepulauan Siau Tagulandang Biaro (SITARO), Kepulauan Talaud, Kotamobagu, Manado, Minahasa, Minahasa Selatan, Minahasa Tenggara, Minahasa Utara, Tomohon, Sumatera Barat, Agam, Bukittinggi, Dharmasraya, Kepulauan Mentawai, Lima Puluh Koto/kota, Padang, Padang Panjang, Padang Pariaman, Pariaman, Pasaman, Pasaman Barat, Payakumbuh, Pesisir Selatan, Sawah Lunto, Sijunjung (SAWAH Lunto Sijunjung), Solok, Solok Selatan, Tanah Datar, Sumatera Selatan, Banyuasin, Empat Lawang, Lahat, Lubuk Linggau, Muara Enim, Musi Banyuasin, Musi Rawas, Ogan Ilir, Ogan Komering Ilir, Ogan Komering ULU, Ogan Komering ULU Selatan, Ogan Komering ULU Timur, Pagar Alam, Palembang, Prabumulih, Sumatera Utara, Asahan, Batu Bara, Binjai, Dairi, Deli Serdang, Gunungsitoli, Humbang Hasundutan, Karo, Labuhan Batu, Labuhan Batu Selatan, Labuhan Batu Utara, Langkat, Mandailing Natal, Medan, Nias, Nias Barat, Nias Selatan, Nias Utara, Padang Lawas, Padang Lawas Utara, Padang Sidempuan, Pakpak Bharat, Pematang Siantar, Samosir, Serdang Bedagai, Sibolga, Simalungun, Tanjung Balai, Tapanuli Selatan, Tapanuli Tengah, Tapanuli Utara, Tebing Tinggi, Toba Samosir, Jabodetabek, Jakarta Raya"
+                                            data-minchars="1"
+                                            name="city_search"
+                                            style="cursor: text;"
+                                        />
+                                    </div>
+                                    <div class="btn-group">
+                                        <button class="btn btn-warning" type="submit">
+                                            <i class="fa fa-search fa-inverse"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="header-space"></div>
+        <section>
+            <div class="alert alert-dismissable alert--fixed text-center alert alert-dismissable alert--fixed text-center alert-success upload-cv" style="display: none;" aria-hidden="true" data-dismiss="alert" type="button" data-q="alert">
+                <i class="fa fa-inverse fa fa-inverse fa-check">&nbsp;</i>
+                CV berhasil diupload
+            </div>
+        </section>
+        <div class="modal fade modal-login modal-modren" id="modal-login" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form
+                        action="https://www.jobs.id/user/login_linkedin?after_login=https%253A%252F%252Fwww.jobs.id%252Flowongan%252FMTU2OTE3%252Faccounting-staff-riau-sakti-united-plantations-pt%253Fqt_ref%253Dsearch%2526qt_page%253D1%2526qt_pos%253D0"
+                        method="POST"
+                    >
+                        <input class="hidden" type="hidden" name="redirect_to" value="" data-q="login-linkedin-redirect" />
+                        <input type="hidden" name="action" data-q="login-linkedin-action" />
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">
+                                <i class="fa fa-times btnTracker" data-t-email="guest" data-t-value="clicked" data-t-tag="login_pop_up_closed"></i>
+                            </button>
+                            <h2 class="modal-title">
+                                Masuk
+                                <strong>
+                                    Jobs.id
+                                </strong>
+                            </h2>
+                            <button class="btn btn-linkedin" href="#">
+                                <span class="no-line">
+                                    Masuk dengan LinkedIn
+                                </span>
+                            </button>
+                            <a
+                                class="btn btn-google"
+                                role="button"
+                                href="https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=83094276690-td1abpbbagtkpaimotcm60f6h7a2af22.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.jobs.id%2Fuser%2Flogin_google&state=https%3A%2F%2Fwww.jobs.id%2Flowongan%2FMTU2OTE3%2Faccounting-staff-riau-sakti-united-plantations-pt%3Fqt_ref%3Dsearch%26qt_page%3D1%26qt_pos%3D0&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&approval_prompt=auto"
+                            >
+                                <span>
+                                    Masuk dengan Google
+                                </span>
+                            </a>
+                            <p class="modal-title-sub">
+                                atau masuk dengan email
+                            </p>
+                        </div>
+                    </form>
+                    <form
+                        action="https://www.jobs.id/user/login?after_login=https%253A%252F%252Fwww.jobs.id%252Flowongan%252FMTU2OTE3%252Faccounting-staff-riau-sakti-united-plantations-pt%253Fqt_ref%253Dsearch%2526qt_page%253D1%2526qt_pos%253D0"
+                        method="POST"
+                        name="form_login"
+                        ng-submit="onSubmitLoginForm($event)"
+                        ng-disabled="form_login.$invalid"
+                        novalidate=""
+                    >
+                        <div class="modal-body clearfix">
+                            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                                <div class="form-group" ng-class="{'has-error': form_login.email.$invalid && form_login.email.$touched || form_login.email.$invalid && form_login.$submitted}">
+                                    <input class="form-control" type="email" name="email" placeholder="Email" form-field="form_login" ng-model="login.email" required="" data-q="login-email" />
+                                    <div class="form-group form-error">
+                                        <span class="label label-danger" ng-show="form_login.email.$error.required">Wajib Diisi</span>
+                                        <span class="label label-danger" ng-show="form_login.email.$error.email && !form_login.email.$error.required">Email Tidak Valid</span>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-class="{'has-error': form_login.password.$invalid && form_login.password.$touched || form_login.password.$invalid && form_login.$submitted}">
+                                    <input class="form-control" type="password" name="password" placeholder="Kata Sandi" form-field="form_login" ng-model="login.password" required="" data-q="login-password" />
+                                    <div class="form-group form-error">
+                                        <span class="label label-danger" ng-show="form_login.password.$error.required">Wajib Diisi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-warning" ng-disabled="!form_login.$valid" data-q="login-btn">
+                                Masuk
+                            </button>
+                            <input type="hidden" name="action" />
+                            <p>
+                                <a href="https://www.jobs.id/user/forgot_password">
+                                    Lupa kata sandi?
+                                </a>
+                            </p>
+                            <p>
+                                Belum punya akun?
+                                <a href="https://www.jobs.id/user/register?context=modal_user_register/MTU2OTE3">
+                                    Daftar
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-modal-search hidden-md hidden-lg">
+            <div class="modal fade mobile-search" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">
+                                <i class="fa fa-times btnTracker" data-t-email="guest" data-t-value="clicked" data-t-tag="exit_mobile_search" data-prog-href="#" role="button"></i>
+                            </button>
+                            <h5 class="modal-title">Cari Lowongan</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form action="https://www.jobs.id/jobs/search_redirect" method="POST" name="header_filter_mobile">
+                                <input type="hidden" name="site" />
+                                <div class="form-group btnTracker" data-t-email="guest" data-t-value="clicked" data-t-tag="mobile_posisi_atau_perusahaan" data-prog-href="#" role="button">
+                                    <input class="form-control js-form_autofocus_mobile" type="text" placeholder="Posisi atau Perusahaan" name="keyword" data-q="search-keyword-mobile" />
+                                </div>
+                                <div class="form-group btnTracker" data-t-email="guest" data-t-value="clicked" data-t-tag="mobile_kota" data-prog-href="#" role="button">
+                                    <input
+                                        class="form-control awesomplete js-form-search-city"
+                                        type="text"
+                                        placeholder="Kota"
+                                        data-list="Bali, Badung, Bangli, Buleleng, Denpasar, Gianyar, Jembrana, Karangasem, Klungkung, Tabanan, Bangka Belitung, Bangka, Bangka Barat, Bangka Selatan, Bangka Tengah, Belitung, Belitung Timur, Pangkal Pinang, Banten, Cilegon, Lebak, Pandeglang, Serang, Tangerang, Tangerang Selatan, Bengkulu, Bengkulu, Bengkulu Selatan, Bengkulu Tengah, Bengkulu Utara, Kaur, Kepahiang, Lebong, Muko Muko, Rejang Lebong, Seluma, DI Yogyakarta, Bantul, Gunung Kidul, Kulon Progo, Sleman, Yogyakarta, DKI Jakarta, Jakarta Barat, Jakarta Pusat, Jakarta Selatan, Jakarta Timur, Jakarta Utara, Kepulauan Seribu, Gorontalo, Boalemo, Bone Bolango, Gorontalo, Gorontalo Utara, Pohuwato, Jambi, Batang Hari, Bungo, Jambi, Kerinci, Merangin, Muaro Jambi, Sarolangun, Sungaipenuh, Tanjung Jabung Barat, Tanjung Jabung Timur, Tebo, Jawa Barat, Bandung, Bandung Barat, Banjar, Bekasi, Bogor, Ciamis, Cianjur, Cimahi, Cirebon, Depok, Garut, Indramayu, Karawang, Kuningan, Majalengka, Pangandaran, Purwakarta, Subang, Sukabumi, Sumedang, Tasikmalaya, Jawa Tengah, Banjarnegara, Banyumas, Batang, Blora, Boyolali, Brebes, Cilacap, Demak, Grobogan, Jepara, Karanganyar, Kebumen, Kendal, Klaten, Kudus, Magelang, Pati, Pekalongan, Pemalang, Purbalingga, Purworejo, Rembang, Salatiga, Semarang, Sragen, Sukoharjo, Surakarta (SOLO), Tegal, Temanggung, Wonogiri, Wonosobo, Jawa Timur, Bangkalan, Banyuwangi, Batu, Blitar, Bojonegoro, Bondowoso, Gresik, Jember, Jombang, Kediri, Lamongan, Lumajang, Madiun, Magetan, Malang, Mojokerto, Nganjuk, Ngawi, Pacitan, Pamekasan, Pasuruan, Ponorogo, Probolinggo, Sampang, Sidoarjo, Situbondo, Sumenep, Surabaya, Trenggalek, Tuban, Tulungagung, Kalimantan Barat, Bengkayang, Kapuas Hulu, Kayong Utara, Ketapang, Kubu Raya, Landak, Melawi, Pontianak, Sambas, Sanggau, Sekadau, Singkawang, Sintang, Kalimantan Selatan, Balangan, Banjar, Banjarbaru, Banjarmasin, Barito Kuala, Hulu Sungai Selatan, Hulu Sungai Tengah, Hulu Sungai Utara, Kotabaru, Tabalong, Tanah Bumbu, Tanah Laut, Tapin, Kalimantan Tengah, Barito Selatan, Barito Timur, Barito Utara, Gunung MAS, Kapuas, Katingan, Kotawaringin Barat, Kotawaringin Timur, Lamandau, Murung Raya, Palangka Raya, Pulang Pisau, Seruyan, Sukamara, Kalimantan Timur, Balikpapan, Berau, Bontang, Kutai Barat, Kutai Kartanegara, Kutai Timur, Paser, Penajam Paser Utara, Samarinda, Kalimantan Utara, Bulungan (BULONGAN), Malinau, Nunukan, Tana Tidung, Tarakan, Kepulauan Riau, Batam, Bintan, Karimun, Kepulauan Anambas, Lingga, Natuna, Tanjung Pinang, Lampung, Bandar Lampung, Lampung Barat, Lampung Selatan, Lampung Tengah, Lampung Timur, Lampung Utara, Mesuji, Metro, Pesawaran, Pesisir Barat, Pringsewu, Tanggamus, Tulang Bawang, Tulang Bawang Barat, WAY Kanan, Maluku, Ambon, Buru, Buru Selatan, Kepulauan ARU, Maluku Barat Daya, Maluku Tengah, Maluku Tenggara, Maluku Tenggara Barat, Seram Bagian Barat, Seram Bagian Timur, Tual, Maluku Utara, Halmahera Barat, Halmahera Selatan, Halmahera Tengah, Halmahera Timur, Halmahera Utara, Kepulauan Sula, Pulau Morotai, Ternate, Tidore Kepulauan, Nanggroe Aceh Darussalam (NAD), Aceh Barat, Aceh Barat Daya, Aceh Besar, Aceh Jaya, Aceh Selatan, Aceh Singkil, Aceh Tamiang, Aceh Tengah, Aceh Tenggara, Aceh Timur, Aceh Utara, Banda Aceh, Bener Meriah, Bireuen, Gayo Lues, Langsa, Lhokseumawe, Nagan Raya, Pidie, Pidie Jaya, Sabang, Simeulue, Subulussalam, Nusa Tenggara Barat (NTB), Bima, Dompu, Lombok Barat, Lombok Tengah, Lombok Timur, Lombok Utara, Mataram, Sumbawa, Sumbawa Barat, Nusa Tenggara Timur (NTT), Alor, Belu, Ende, Flores Timur, Kupang, Lembata, Manggarai, Manggarai Barat, Manggarai Timur, Nagekeo, Ngada, Rote Ndao, Sabu Raijua, Sikka, Sumba Barat, Sumba Barat Daya, Sumba Tengah, Sumba Timur, Timor Tengah Selatan, Timor Tengah Utara, Papua, Asmat, Biak Numfor, Boven Digoel, Deiyai (DELIYAI), Dogiyai, Intan Jaya, Jayapura, Jayawijaya, Keerom, Kepulauan Yapen (YAPEN Waropen), Lanny Jaya, Mamberamo Raya, Mamberamo Tengah, Mappi, Merauke, Mimika, Nabire, Nduga, Paniai, Pegunungan Bintang, Puncak, Puncak Jaya, Sarmi, Supiori, Tolikara, Waropen, Yahukimo, Yalimo, Papua Barat, Fakfak, Kaimana, Manokwari, Manokwari Selatan, Maybrat, Pegunungan Arfak, Raja Ampat, Sorong, Sorong Selatan, Tambrauw, Teluk Bintuni, Teluk Wondama, Riau, Bengkalis, Dumai, Indragiri Hilir, Indragiri Hulu, Kampar, Kepulauan Meranti, Kuantan Singingi, Pekanbaru, Pelalawan, Rokan Hilir, Rokan Hulu, Siak, Sulawesi Barat, Majene, Mamasa, Mamuju, Mamuju Utara, Polewali Mandar, Sulawesi Selatan, Bantaeng, Barru, Bone, Bulukumba, Enrekang, Gowa, Jeneponto, Luwu, Luwu Timur, Luwu Utara, Makassar, Maros, Palopo, Pangkajene Kepulauan, Parepare, Pinrang, Selayar (KEPULAUAN Selayar), Sidenreng Rappang/rapang, Sinjai, Soppeng, Takalar, Tana Toraja, Toraja Utara, Wajo, Sulawesi Tengah, Banggai, Banggai Kepulauan, Buol, Donggala, Morowali, Palu, Parigi Moutong, Poso, Sigi, Tojo Una-una, Toli-toli, Sulawesi Tenggara, Bau-bau, Bombana, Buton, Buton Utara, Kendari, Kolaka, Kolaka Utara, Konawe, Konawe Selatan, Konawe Utara, Muna, Wakatobi, Sulawesi Utara, Bitung, Bolaang Mongondow (BOLMONG), Bolaang Mongondow Selatan, Bolaang Mongondow Timur, Bolaang Mongondow Utara, Kepulauan Sangihe, Kepulauan Siau Tagulandang Biaro (SITARO), Kepulauan Talaud, Kotamobagu, Manado, Minahasa, Minahasa Selatan, Minahasa Tenggara, Minahasa Utara, Tomohon, Sumatera Barat, Agam, Bukittinggi, Dharmasraya, Kepulauan Mentawai, Lima Puluh Koto/kota, Padang, Padang Panjang, Padang Pariaman, Pariaman, Pasaman, Pasaman Barat, Payakumbuh, Pesisir Selatan, Sawah Lunto, Sijunjung (SAWAH Lunto Sijunjung), Solok, Solok Selatan, Tanah Datar, Sumatera Selatan, Banyuasin, Empat Lawang, Lahat, Lubuk Linggau, Muara Enim, Musi Banyuasin, Musi Rawas, Ogan Ilir, Ogan Komering Ilir, Ogan Komering ULU, Ogan Komering ULU Selatan, Ogan Komering ULU Timur, Pagar Alam, Palembang, Prabumulih, Sumatera Utara, Asahan, Batu Bara, Binjai, Dairi, Deli Serdang, Gunungsitoli, Humbang Hasundutan, Karo, Labuhan Batu, Labuhan Batu Selatan, Labuhan Batu Utara, Langkat, Mandailing Natal, Medan, Nias, Nias Barat, Nias Selatan, Nias Utara, Padang Lawas, Padang Lawas Utara, Padang Sidempuan, Pakpak Bharat, Pematang Siantar, Samosir, Serdang Bedagai, Sibolga, Simalungun, Tanjung Balai, Tapanuli Selatan, Tapanuli Tengah, Tapanuli Utara, Tebing Tinggi, Toba Samosir"
+                                        data-minchars="1"
+                                        name="city_search"
+                                        style="cursor: text;"
+                                    />
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn btn-warning btn-block" type="submit" data-q="search-btn-mobile">Cari</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <script type="text/javascript">
+                //<![CDATA[
+                (function () {
+                    window.document.getElementsByTagName("body")[0].onload = function () {
+                        var css = [
+                            "https:\/\/cdn01.jobs.id\/asset\/rms\/js\/jQuery-File-Upload-master\/css\/style.css",
+                            "https:\/\/cdn04.jobs.id\/asset\/rms\/js\/jQuery-File-Upload-master\/css\/jquery.fileupload.css",
+                            "\/\/cdnjs.cloudflare.com\/ajax\/libs\/slick-carousel\/1.6.0\/slick.min.css",
+                        ];
+
+                        css.forEach(function (css) {
+                            var n = window.document.createElement("link");
+                            var t = window.document.getElementsByTagName("head")[0];
+
+                            n.rel = "stylesheet";
+                            n.href = css;
+                            t.appendChild(n);
+                        });
+                    };
+                })();
+                //]]>
+            </script>
+            <div class="job-detail">
+                <div class="container">
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8" style="padding-bottom: 15px;">
+                            <div id="breadcrumbs" class="breadcrumbs" style="padding-top: 10px;">
+                                <a href="https://www.jobs.id/" style="color: #1976d2;">
+                                    Beranda
+                                </a>
+                                <p style="display: inline; color: #1976d2;">
+                                    >
+                                </p>
+                                <a href="https://www.jobs.id/lowongan-kerja" style="color: #1976d2;">
+                                    Lowongan kerja
+                                </a>
+                                <p style="display: inline; color: grey;">
+                                    >
+                                </p>
+                                <a href="https://www.jobs.id/MTU2OTE3/accounting-staff-riau-sakti-united-plantations-pt" style="color: grey;">
+                                    Accounting staff riau sakti united plantations pt
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-8">
+                            <div class="panel panel-default job-ads-content">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-sm-10 col-xs-12">
+                                            <h1 class="clear-top bold">
+                                                Accounting Staff
+                                            </h1>
+                                            <h5>
+                                                <a href="https://www.jobs.id/lowongan-kerja-riau-sakti-united-plantations-pt?kata-kunci=Riau+Sakti+United+Plantations+PT">
+                                                    <strong class="text-muted">Riau Sakti United Plantations PT</strong>
+                                                </a>
+                                                <span class="text-gray">
+                                                    &nbsp;&nbsp;
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span class="location">Indragiri Hilir</span>
+                                                </span>
+                                            </h5>
+                                        </div>
+                                        <div class="col-sm-2 col-xs-12 bookmark-panel not-logged-in">
+                                            <a
+                                                class="btn btn-default btn-sm bookmark-button login-modal-trigger col-xs-6"
+                                                href="https://www.jobs.id/user/login?action=YWRkX2Jvb2ttYXJrI01UVTJPVEUz&after_login=https%253A%252F%252Fwww.jobs.id%252Flowongan%252FMTU2OTE3%252Faccounting-staff-riau-sakti-united-plantations-pt%253Fqt_ref%253Dsearch%2526qt_page%253D1%2526qt_pos%253D0"
+                                                data-action="YWRkX2Jvb2ttYXJrI01UVTJPVEUz"
+                                            >
+                                                <i class="fa fa-star-o"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                            <h4>
+                                                <small>
+                                                    Pengalaman Kerja:
+                                                </small>
+                                                <br />
+                                                <span class="semi-bold">
+                                                    Fresh Graduate akan dipertimbangkan
+                                                </span>
+                                            </h4>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                            <h4>
+                                                <small>
+                                                    Bidang Pekerjaan:
+                                                </small>
+                                                <br />
+                                                <a class="cyan semi-bold" href="https://www.jobs.id/lowongan-kerja-bidang-accounting-finance?bidang=accounting-finance">Accounting &amp; Finance</a>
+                                            </h4>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                            <h4>
+                                                <small>
+                                                    Gaji:
+                                                </small>
+                                                <br />
+                                                <span class="semi-bold currency text-success">IDR </span>
+                                                <span class="semi-bold">2.700.000</span>
+                                                &ndash;
+                                                <span class="semi-bold">3.300.000</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <h3>
+                                        <i class="fa fa-fw fa-file-text text-muted"></i>
+                                        Persyaratan
+                                    </h3>
+                                    <div class="job_req">
+                                        <div data-pasted="1">
+                                            <ul>
+                                                <li>Pria / wanita</li>
+                                                <li>Maksimal 30 tahun</li>
+                                                <li>Pendidikan S1 Akutansi</li>
+                                                <li>Fresh graduate are welcome</li>
+                                                <li>Mengerti jurnal &amp; prinsip akuntansi</li>
+                                                <li>Mengerti cash flow, laporan keuangan</li>
+                                                <li>Teliti, detail dan disiplin</li>
+                                                <li>Bisa bekerja dibawah tekanan</li>
+                                                <li>Terbiasa dengan deadline</li>
+                                            </ul>
+                                        </div>
+                                        <br />
+                                        <br />
+                                        <br />
+                                        [Posisi Prioritas]
+                                    </div>
+                                    <div class="row">
+                                        <br />
+                                        <div class="col-xs-6">
+                                            <p class="text-gray">
+                                                Diiklankan sejak 3 December 2020
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p class="text-gray text-right">
+                                                Ditutup pada 13 December 2020
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3"></div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-8 col-lg-6 pull-right text-right">
+                                                    <a class="btn btn-block btn-warning semi-bold login-modal-trigger progressive-link" href="#" data-prog-href="#" role="button">
+                                                        Lamar Sekarang
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default other-job-ads-panel">
+                                <div class="panel-heading">
+                                    <h3 class="clear-both">
+                                        <i class="fa fa-briefcase"></i>
+                                        4 Lowongan lainnya dari
+                                        <b>Riau Sakti United Plantations PT</b>
+                                    </h3>
+                                </div>
+                                <div class="panel-body clearfix">
+                                    <div class="other-job-ads clearfix">
+                                        <div class="col-xs-4">
+                                            <div class="row">
+                                                <h4 class="clear-both">
+                                                    <a class="bold" href="https://www.jobs.id/lowongan/MzAxMjk3/bidan-riau-sakti-united-plantations-pt?qt_ref=same_company_jobs" target="_blank">Bidan</a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 col-xs-offset-1">
+                                            <div class="row">
+                                                <h5 class="clear-top text-muted">
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span class="location">Indragiri Hilir</span>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="row">
+                                                <div class="text-right">
+                                                    <span class="semi-bold text-gray">Gaji Dirahasiakan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="other-job-ads clearfix">
+                                        <div class="col-xs-4">
+                                            <div class="row">
+                                                <h4 class="clear-both">
+                                                    <a class="bold" href="https://www.jobs.id/lowongan/Mjk2NjMw/management-trainee-recruitment-officer-riau-sakti-united-plantations-pt?qt_ref=same_company_jobs" target="_blank">
+                                                        Management Trainee ( Recruitment Officer )
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 col-xs-offset-1">
+                                            <div class="row">
+                                                <h5 class="clear-top text-muted">
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span class="location">Indragiri Hilir</span>
+                                                </h5>
+                                                <p class="clear-bottom">
+                                                    <b>123</b>
+                                                    Total Aplikasi
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="row">
+                                                <div class="text-right">
+                                                    <span class="semi-bold text-gray">Gaji Dirahasiakan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="other-job-ads clearfix">
+                                        <div class="col-xs-4">
+                                            <div class="row">
+                                                <h4 class="clear-both">
+                                                    <a class="bold" href="https://www.jobs.id/lowongan/MTMzNzk0/quality-assurance-staff-riau-sakti-united-plantations-pt?qt_ref=same_company_jobs" target="_blank">Quality Assurance Staff</a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 col-xs-offset-1">
+                                            <div class="row">
+                                                <h5 class="clear-top text-muted">
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span class="location">Indragiri Hilir</span>
+                                                </h5>
+                                                <p class="clear-bottom">
+                                                    <b>467</b>
+                                                    Total Aplikasi
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="row">
+                                                <div class="text-right">
+                                                    <span class="semi-bold text-gray">Gaji Dirahasiakan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="other-job-ads clearfix">
+                                        <div class="col-xs-4">
+                                            <div class="row">
+                                                <h4 class="clear-both">
+                                                    <a class="bold" href="https://www.jobs.id/lowongan/MTY2NDc1/management-trainee-warehouse-riau-sakti-united-plantations-pt?qt_ref=same_company_jobs" target="_blank">
+                                                        Management Trainee (Warehouse)
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 col-xs-offset-1">
+                                            <div class="row">
+                                                <h5 class="clear-top text-muted">
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span class="location">Indragiri Hilir dan </span>
+                                                    <a
+                                                        class="location-more"
+                                                        id="city-166475"
+                                                        role="button"
+                                                        data-toggle="popover"
+                                                        data-container="body"
+                                                        data-placement="bottom"
+                                                        data-content="<div class='col-xs-12'><div class='col-xs-12 city-name'>Pekanbaru</div></div>"
+                                                        data-template="<div class='popover' role='tooltip'><div class='arrow'></div><div class='popover-body popover-body-jobs popover-widget'><div class='popover-content-jobs'><div class='row'><div class='col-xs-12'><div class='col-xs-12 city-name'>Pekanbaru</div></div></div></div></div></div>"
+                                                    >
+                                                        1 kota lainnya
+                                                    </a>
+                                                </h5>
+                                                <p class="clear-bottom">
+                                                    <b>2532</b>
+                                                    Total Aplikasi
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="row">
+                                                <div class="text-right">
+                                                    <span class="semi-bold currency text-success">IDR </span>
+                                                    <span class="semi-bold">2.900.000</span>
+                                                    &ndash;
+                                                    <span class="semi-bold">3.500.000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default about-company">
+                                <div class="panel-body">
+                                    <h3 class="space10">
+                                        <i class="fa fa-fw fa-building text-muted"></i>
+                                        Tentang Perusahaan
+                                    </h3>
+                                    <div class="about-company">
+                                        PT. RIAU SAKTI UNITED PLANTATIONS-INDUSTRY PULAU BURUNG ( tergabung dalam SAMBU GROUP) adalah perusahaan makan yang bergerak dibidang industry pengolahan buah kelapa dan nenas terpadu. Produk yang
+                                        kami hasilkan diantaranya adalah Santan KARA (beredar di Indonesia), Desiccated Coconut, Concentrate Coconut Water, Crude Coconut Oil, Karbon Aktif, Nenas Berkemasan, Selai Nenas, Jus Nenas, & Kulit
+                                        nenas kering (sebagian besar produk kami di export ke luar negeri). Bertempat di Desa Pulau Burung, Kecamatan Pulau Burung, Kabupaten Indragiri Hilir, Riau - Indonesia. Kami memiliki budaya perusahaan
+                                        yang dinamis, kreatif , dan inovatif serta menyediakan kesempatan bagi Anda untuk mengembangkan karier bersama kami. Why join us? PT. RIAU SAKTI UNITED PLANTATIONS-INDUSTRY PULAU BURUNG ( tergabung
+                                        dalam SAMBU GROUP) adalah perusahaan makan yang bergerak dibidang industry pengolahan buah kelapa dan nenas terpadu. sebagian besar produk yang kami hasilkan di ekspor. Kami memiliki budaya perusahaan
+                                        yang dinamis, kreatif , dan inovatif serta menyediakan kesempatan bagi Anda untuk mengembangkan karier bersama kami.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="panel panel-default panel-persuation">
+                                <div class="panel-body">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img src="https://www.jobs.id/asset/jobsid/img/persuation_register.png" />
+                                        </div>
+                                        <div class="media-body">
+                                            <h4>Mencari pekerjaan impian?</h4>
+                                            <p>
+                                                <a href="/user/register?context=persuation_panel">Registrasi Sekarang,</a>
+                                                cepat dan mudah
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default company-profile">
+                                <div class="panel-heading">
+                                    <h4 class="bold">
+                                        <i class="fa fa-fw fa-building text-muted"></i>
+                                        Profil Perusahaan
+                                    </h4>
+                                </div>
+                                <div class="panel-body">
+                                    <img src="//kisikisi-root.nos.jkt-1.neo.id/assets/images/logo/riau_sakti_united_plantations_pt_1583889537.png" alt="Riau Sakti United Plantations PT" />
+                                    <h3>
+                                        <strong>Riau Sakti United Plantations PT</strong>
+                                    </h3>
+                                    <hr />
+                                    <p>
+                                        <small>Industri:</small>
+                                        <br />
+                                        <span>
+                                            <a class="cyan semi-bold" href="https://www.jobs.id/lowongan-kerja-industri-1035?industri=manufaktur-lainnya">Other Manufacturers</a>
+                                        </span>
+                                    </p>
+                                    <p>
+                                        <small>Ukuran Perusahaan:</small>
+                                        <br />
+                                        <b class="semi-bold" style="word-wrap: break-word;">1001 - 5000 employees</b>
+                                    </p>
+                                    <hr />
+                                    <p>
+                                        <small>Kantor Pusat:</small>
+                                        <br />
+                                        <b class="semi-bold" style="word-wrap: break-word;">KM 00 Desa Pulau Burung Kec. Pulau Burung Kab. Indragiri Hilir, Riau, 29256</b>
+                                    </p>
+                                    <br />
+                                    <iframe
+                                        frameborder="0"
+                                        height="308"
+                                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDmNP5ugIPdjH22li4pWBsq0I96lFObEQQ&q=KM%2000%20Desa%20Pulau%20Burung%20Kec.%20Pulau%20Burung%20Kab.%20Indragiri%20Hilir%2C%20Riau%2C%2029256"
+                                        style="border: 0;"
+                                        width="308"
+                                    ></iframe>
+                                </div>
+                            </div>
+
+                            <div id="relatedJobs"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalRelatedJobs" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <a class="close" role="button" data-dismiss="modal">
+                                <i class="fa fa-times"></i>
+                            </a>
+                            <img src="https://cdn02.jobs.id/asset/jobsid/img/apply-banner/banner_penipuan.jpg" />
+                            <div id="modalRelatedJobsSlick"></div>
+                            <div class="row hidden text-left" id="testContent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script id="templModalRelatedJobs" type="text/x-jsrender">
+                {{if data !== null}}
+                <p>
+                  <strong>Lowongan lainnya untuk anda</strong>
+                </p>
+                <br>
+                <div class="slick-related-jobs">
+                  {{for data}}
+                  <div class="panel panel-default" style="display: flex;flex:1 0 0%;flex-direction: column;">
+                    <div class="panel-body" style="flex: 1 1 auto;">
+                      {{if company_logo}}
+                      <img src="{^{>url:company_logo}}" style="max-width:100%; height: 60px; object-fit:contain; margin-bottom:10px;">
+                      {{else}}
+                      <img src="https://www.jobs.id/asset/jobsid/img/building2.png" style="max-width:100%; height: 60px; object-fit:contain; margin-bottom:10px;">
+                      {{/if}}
+                      <p>
+                        <a class="bold btnTracker" href="/lowongan/{{*:data.link.slice(10)}}" data-t-email="guest" data-t-value="modal-related-job" data-t-tag="link-related-job-desktop" data-encode="{{*:data.link.slice(10)}}" target="_blank">{{:job_title}}</a>
+                      </p>
+                      <p>{{:company_name}}</p>
+                      {{if MinSalary !== '0 ' || MaxSalary !== '0 '}}
+                      <p class="text-success">
+                        IDR
+                        {{if MinSalary !== '0 '}}
+                        {{:MinSalary}}
+                        {{/if}}
+                        {{if MaxSalary === '0 '}}
+                        min
+                        {{/if}}
+                        {{if MinSalary !== '0 ' && MaxSalary !== '0 '}}
+                         -
+                        {{/if}}
+                        {{if MaxSalary !== '0 '}}
+                        {{:MaxSalary}}
+                        {{/if}}
+                        {{if MinSalary === '0 '}}
+                        max
+                        {{/if}}
+                      </p>
+                      {{else}}
+                      <p class="semi-bold text-gray"></p>
+                      Gaji Dirahasiakan
+                      {{/if}}
+                      <p>
+                        {^{if cities.length > 1}}
+                        {{*:data.cities[0].name}}
+                        dan
+                        <a class="location-more" role="button" data-toggle="popover" data-container="body" data-placement="bottom" data-content="{{*:data.cities}}" data-template="<div class='popover' role='tooltip' style='z-index: 1661;'><div class='arrow'></div><div class='popover-body popover-body-jobs popover-widget' style='padding-top:12px !important;'><div class='popover-content-jobs'><div class='row'>{{* for (i=1; i<data.cities.length; i++) { }}<div class='cities-name col-xs-6'>{{*:data.cities[i].name}}</div>{{* } }}</div></div></div></div>">
+                          {{*:data.cities.length - 1 }}
+                          kota lainnya
+                        </a>
+                        {{else}}
+                        {{*:data.cities[0].name}}
+                        {{/if}}
+                      </p>
+                      <p>
+                        <i class="fa fa-clock-o"></i>
+                        {{:CreatedAt}}
+                      </p>
+                    </div>
+                    <div class="panel-footer" style="background: transparent;border-top: 0;">
+                      {^{if cities.length > 1}}
+                      <button class="btn btn-warning btn-block btn-location location-more" type="button" name="popover" data-toggle="popover" data-t-tag="related-ads-modal-btn-apply-desktop" data-encode="{{*:data.link.slice(10)}}" data-container="body" data-title="Pilih Lokasi" data-placement="top" data-content="{^{:cities}}" data-template="<div class='popover select-city' role='tooltip' style='z-index: 1661;'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-body popover-body-jobs popover-widget'><div class='row'>{{* for (i=0; i<data.cities.length; i++) { }}<div class='cities-name col-xs-6'><div class='checkbox checkbox-info pull-left' style='margin:0;'><input type='checkbox' id='{{*:data.cities[i].id}}' class='cityCheckbox' name='{{*:data.cities[i].name}}' value='{{*:data.cities[i].id}}'><label for='{{*:data.cities[i].id}}'>{{*:data.cities[i].name}}</label></div></div>{{* } }}</div></div><div class='popover-footer' style='background-color:#f7f7f7;border-top:1px solid #ebebeb;border-radius:0 0 5px 5px;padding:10px;'><button type='button' name='apply-multiple-cities' class='btn btn-block btn-default btnApplyAction semi-bold' data-count='{^{:cities.length}}' data-action='modal-apply'  data-t-tag='related-ads-popover-desktop' data-encode='{{*:data.link.slice(10)}}' data-t-email=current_logged_email_user data-t-value='modal-related-job-{{*:data.job_ads_id}}'>Apply Now</button></div></div>">
+                        Apply
+                      </button>
+                      {{else}}
+                      <button class="btn btn-warning btn-block btnApplyAction" type="button" name="apply-single-city" data-cities="{{*:data.cities[0].id}}" data-count="{^{:cities.length}}" data-t-tag="related-ads-single-city-desktop" data-encode="{{*:data.link.slice(10)}}" data-action="modal-apply" data-t-email="guest" data-t-value="modal-related-job-{{*:data.job_ads_id}}">
+                        Apply
+                      </button>
+                      {{/if}}
+                    </div>
+                  </div>
+                  {{/for}}
+                  {{/if}}
+                </div>
+            </script>
+        </section>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="col-xs-12 col-md-4">
+                    <a href="/">
+                        <img class="footer-jobsid" src="https://cdn03.jobs.id/asset/jobsid/img/large-logo-new.png" />
+                    </a>
+                    <a href="https://ayokitakerja.kemnaker.go.id/" target="_blank">
+                        <img class="footer-kemenaker" src="https://cdn02.jobs.id/asset/jobsid/img/kemenaker-logo.png" />
+                    </a>
+                    <p>
+                        Jobs.id bekerja sama dengan Kementerian Ketenagakerjaan Republik Indonesia dalam menyediakan lowongan pekerjaan bagi masyarakat..
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-2">
+                    <h5>
+                        Tentang Kami
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="https://www.jobs.id/user/about?context=footer_panel">Latar Belakang</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobs.id/lowongan-kerja-jobsid?kata-kunci=jobs.id">Berkarir Bersama Kami</a>
+                        </li>
+                        <li>
+                            <a href="https://id.jooble.org" target="_blank">Lowongan Lainnya</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-2">
+                    <h5>
+                        Pencari Kerja
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="https://www.jobs.id/berkas/posisi">Berdasarkan Posisi</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobs.id/berkas/lokasi">Berdasarkan Lokasi</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobs.id/berkas/perusahaan">Berdasarkan Perusahaan</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobs.id/berkas/bidang">Berdasarkan Bidang</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobs.id/berkas/industri">Berdasarkan Industri</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-2">
+                    <h5>
+                        Perusahaan
+                    </h5>
+                    <ul>
+                        <li>
+                            <a href="https://www.jobs.id/employer_account/login?context=footer_panel" rel="nofollow">Pasang Lowongan</a>
+                            <a href="https://www.jobs.id/hubungi-kami/inkuiri?jenis_pertanyaan=pricing" rel="nofollow">Perencanaan Harga</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobs.id/user/about#employer-menu">Mengapa Kami</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobs.id/user/terms">Syarat Penggunaan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-2">
+                    <b>
+                        <a href="https://www.jobs.id/hubungi-kami/pesan" rel="nofollow">
+                            Hubungi Kami
+                        </a>
+                    </b>
+                    <b>
+                        <a href="http://www.qerja.com/journal/">
+                            Blog
+                        </a>
+                    </b>
+                    <div class="footer-social">
+                        <h5>
+                            Lihat Kami di
+                        </h5>
+                        <a class="social-link color-facebook" href="https://facebook.com/Jobs.id" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a class="social-link color-twitter" href="https://twitter.com/JobsDotId" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <br />
+                        <a class="social-link color-linkedin" href="https://id.linkedin.com/in/jobsid" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a class="social-link color-instagram" href="https://www.instagram.com/jobsdotid/" target="_blank">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p class="footer-bottom">
+                        &copy; Jobs.id 2020. Hak Cipta Dilindungi Undang-Undang.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            //<![CDATA[
+            var google_tag_params = {
+                job_id: "MTU2OTE3",
+                job_locid: "553",
+                job_pagetype: "offerdetail",
+                job_totalvalue: 3000000,
+            };
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            var google_conversion_id = 825557635;
+            var google_custom_params = window.google_tag_params;
+            var google_remarketing_only = true;
+
+            //]]>
+        </script>
+        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+        <noscript class="hidden">
+            <img height="1" width="1" style="border-style: none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/825557635/?value=0&amp;guid=ON&amp;script=0" />
+        </noscript>
+        <div class="modal fade in" id="modal_login_attempt" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="content-body">
+                            <h2 class="text-danger content-title text-center">
+                                <i class="fa fa-exclamation-circle">
+                                    <strong>
+                                        Kata Sandi Anda Salah
+                                    </strong>
+                                </i>
+                            </h2>
+                            <div class="content-body">
+                                <p class="text-center">
+                                    Maaf Anda sudah 3x salah masukkan kata sandi. Silahkan cek email Anda, Kami sudah mengirimkan link masuk otomatis ke email terdaftar Anda.
+                                </p>
+                            </div>
+                            <div class="content-footer">
+                                <button class="btn btn-warning btn-block btn-lg" data-dismiss="modal">
+                                    OKE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn02.jobs.id/asset/jobsid/build/js/app-da205ba908.min.js"></script>
+        <script src="https://cdn03.jobs.id/asset/jobsid/js/js.cookie.js"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            var _baseUrl = "https://www.jobs.id/";
+            var _isLoggedIn = "";
+            var _professional = {};
+            var app = angular.module("app", []);
+
+            window.jobsIdWidgetHost = "//widg.jobs.id";
+            //]]>
+        </script>
+        <script src="https://cdn01.jobs.id/asset/jobsid/js/directives/qf-autocomplete.js"></script>
+        <script src="https://cdn03.jobs.id/asset/jobsid/js/directives/qf-autocorrect.js"></script>
+        <script src="https://cdn03.jobs.id/asset/jobsid/js/moment.min.js"></script>
+        <script src="https://cdn04.jobs.id/asset/jobsid/js/moment-locale/id.js"></script>
+        <script src="https://cdn03.jobs.id/asset/jobsid/js/filters/timeBeforeAutoFormat.js"></script>
+        <script src="https://cdn.jobs.id/asset/jobsid/js/filters/formatDate.js"></script>
+        <script src="https://cdn.jobs.id/asset/jobsid/js/directives/form-field.js"></script>
+        <script src="https://cdn.jobs.id/asset/jobsid/js/directives/currency-format.js"></script>
+        <script src="https://cdn01.jobs.id/asset/jobsid/js/cookie.js"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            function isJson(item) {
+                item = typeof item !== "string" ? JSON.stringify(item) : item;
+
+                try {
+                    item = JSON.parse(item);
+                } catch (e) {
+                    return false;
+                }
+
+                return typeof item === "object" && item !== null;
+            }
+
+            var jobsidPublicApiUrl = "https://api2.jobs.id";
+            var device = "desktop-web";
+            var currentUrl = "/lowongan/MTU2OTE3/accounting-staff-riau-sakti-united-plantations-pt";
+            var fullCurrentUrl = "https://www.jobs.id/lowongan/MTU2OTE3/accounting-staff-riau-sakti-united-plantations-pt";
+            var gsource = "jobsid";
+
+            if (jobsidPublicApiUrl !== undefined) {
+                $(document).ready(function () {
+                    $(document).on("click", ".btnTracker", function () {
+                        var thisElm = $(this);
+                        var value = thisElm.attr("data-t-value");
+                        var tag = thisElm.attr("data-t-tag");
+                        var email = thisElm.attr("data-t-email");
+                        var d = new Date().toISOString();
+                        var data = {
+                            tag: tag,
+                            version: "1",
+                            gsource: gsource,
+                            device: device,
+                            data: {
+                                parameter: isJson(value) ? JSON.parse(value) : value,
+                            },
+                            user: email,
+                            time: d,
+                            referrer: currentUrl,
+                            utm_source: window.cookies.getItem("utm_source") ? window.cookies.getItem("utm_source") : "",
+                            utm_medium: window.cookies.getItem("utm_medium") ? window.cookies.getItem("utm_medium") : "",
+                            utm_campaign: window.cookies.getItem("utm_campaign") ? window.cookies.getItem("utm_campaign") : "",
+                            session_id: window.cookies.getItem("qollect_session_id") ? window.cookies.getItem("qollect_session_id") : "",
+                            current_url: fullCurrentUrl,
+                        };
+                        data = JSON.stringify(data);
+                        // $.ajax({
+                        //   url: jobsidPublicApiUrl + '/v1/qollect/create',
+                        //   beforeSend: function(request) {
+                        //     request.setRequestHeader("Content-Type", "application/json");
+                        //   },
+                        //   type: 'POST',
+                        //   data: data
+                        // });
+                    });
+                });
+            }
+
+            //]]>
+        </script>
+        <script src="https://cdn.jobs.id/asset/jobsid/js/directives/validation-error.js"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            var currentDate = new Date();
+            var currentYear = currentDate.getFullYear();
+            var _logoPrefix = "//kisikisi-root.nos.jkt-1.neo.id/assets/";
+            var language = "id";
+            var localize_talk_to_our_representative = "Diskusikan dengan kami";
+            var localize_help = "Bantuan";
+            moment.locale("id");
+            var validation_localize = {
+                required: "Wajib Diisi",
+                email_not_valid: "Email Tidak Valid",
+                minimum_character: "Minimum %s karakter",
+                character_long: "Maksimum %s karakter",
+                not_match: "Tidak sama dengan input sebelumnya",
+                not_match_short: "Input tidak sama",
+                less_than: "Harus kurang dari maksimal input",
+                less_than_equal: "Harus kurang dari atau sama dengan maksimal input",
+                non_negative: "Input tidak boleh negatif",
+                contact_free: "Hapus kontak Anda pada iklan ini. Jobs.id tidak memperbolehkan adanya aktivitas publikasi kontak.",
+                max_value_gpa: "Input tidak valid",
+                invalid_character: "Karakter tidak valid %s",
+                invalid_salary: "Tolong masukkan gaji yang layak\/masuk akal",
+                outlier_salary: "Mohon cek lagi dan masukkan jumlah yang sesuai",
+                invalid_website: "Website Tidak Valid",
+                invalid_file_type: "Tipe file tidak sesuai",
+                invalid_job_title: "Posisi salah",
+                invalid_period: "Periode salah",
+                email_already_used: "Email telah digunakan",
+                email_already_used_linkedin: "Email telah digunakan sebagai registrasi linkedin, harap lengkapi",
+                file_too_large: "File terlalu besar",
+            };
+            var _baseUrl = "https://www.jobs.id/";
+            var loginButton = $("a[aria-controls='collapseLogin']").attr("href", "#collapseLogin");
+            var showModalProfileCompleteness = null;
+            // $("#collapseLogin").find(".close.hidden").removeClass("hidden");
+
+            $("#currentYear").text(currentYear);
+
+            $(".login-modal-trigger").on("click", function () {
+                $(".modal-login").modal("show");
+            });
+
+            $(".mobile-modal-search").on("shown.bs.modal", function () {
+                $(".js-form_autofocus_mobile").focus();
+            });
+
+            $(".js-modal-trigger").on("click", function () {
+                var dataTarget = $(this).attr("data-target");
+                $(dataTarget).modal("show");
+            });
+
+            /*-------------------------- feedback ------------------------*/
+            var feedbackStage = 1;
+            var feedback_id = null;
+            var recommendation_rate = null;
+            var description = "";
+            var alerts =
+                '<div class="alert alert-dismissable alert--fixed text-center alert alert-dismissable alert--fixed text-center alert-success upload-cv" style="" aria-hidden="true" data-dismiss="alert" type="button" data-q="alert"><i class="fa fa-inverse fa fa-inverse fa-check">&nbsp;</i>Respon berhasil dikirim</div>';
+            $(".feedback-floating").click(function () {
+                $(".modal-feedback").addClass("open");
+                $(".feedback-radio").prop("checked", false);
+                $(".feedback-textarea").val("");
+                $("#feedback-form2").removeClass("open");
+                $("#feedback-form1").removeClass("open");
+                $("#feedback-form3").addClass("open");
+                $(".btn-submit-feedback").html("Selanjutnya");
+                $(".modal-title.text-center").html("Pilih Penilaian");
+                feedbackStage = 1;
+            });
+            $(".close.pull-right").click(function () {
+                $(".modal-feedback").removeClass("open");
+            });
+            $(".feedback-radio").change(function () {
+                if (feedbackStage === 1) {
+                    recommendation_rate = this.value;
+                } else {
+                    feedback_id = this.value;
+                    if (feedback_id != 5) {
+                        $(".btn-submit-feedback").html("Kirim");
+                    } else {
+                        $(".btn-submit-feedback").html("Selanjutnya");
+                    }
+                }
+                $(".btn-submit-feedback").removeClass("btn-disabled");
+            });
+            $(".feedback-textarea").keyup(function () {
+                description = this.value;
+                $(".btn-submit-feedback").removeClass("btn-disabled");
+            });
+            $(".btn-submit-feedback").click(function () {
+                if (!$(".btn-submit-feedback").hasClass("btn-disabled")) {
+                    if (feedbackStage === 1) {
+                        if (recommendation_rate <= 6) {
+                            $("#feedback-form1").addClass("open");
+                            $("#feedback-form3").removeClass("open");
+                            $(".modal-title.text-center").html("Silahkan isi kritik dan saran Anda");
+                            feedbackStage = 2;
+                        } else {
+                            $("#feedback-form3").removeClass("open");
+                            $("#feedback-form2").addClass("open");
+                            feedbackStage = 3;
+                            $(".modal-title.text-center").html("Silahkan isi kritik dan saran Anda");
+                            $(".btn-submit-feedback").html("Kirim");
+                        }
+                    } else if (feedbackStage === 2) {
+                        if (feedback_id == 5) {
+                            $("#feedback-form2").addClass("open");
+                            $("#feedback-form1").removeClass("open");
+                            feedbackStage = 2;
+                            $(".btn-submit-feedback").html("Kirim");
+                            $(".modal-title.text-center").html("Silahkan isi kritik dan saran Anda");
+                        } else {
+                            submitForm();
+                        }
+                    } else {
+                        submitForm();
+                    }
+                    $(".btn-submit-feedback").addClass("btn-disabled");
+                }
+            });
+            function submitForm() {
+                $.ajax({
+                    url: "/feedback/xmlhttp_post_feedback",
+                    type: "post",
+                    data: {
+                        feedback_id,
+                        recommendation_rate,
+                        description,
+                    },
+                    beforeSend: function () {
+                        $(".btn-submit-feedback").html("Memproses");
+                        $(".btn-submit-feedback").addClass("btn-disabled");
+                    },
+                    success: function (response) {
+                        $(".modal-feedback").removeClass("open");
+                        $("section:first").prepend(alerts);
+                        feedbackStage = 1;
+                        $("#feedback-form3").removeClass("open");
+                        $("#feedback-form1").addClass("open");
+                        $(".feedback-radio").prop("checked", false);
+                        $(".feedback-textarea").val("");
+                    },
+                    error: function () {
+                        $(".btn-submit-feedback").html("Kirim");
+                        $(".btn-submit-feedback").removeClass("btn-disabled");
+                        alert("Sesuatu terjadi, harap coba lagi");
+                    },
+                });
+            }
+
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            var app = angular.module("app", []),
+                descriptionBlacklistRule = {
+                    phone: "(^|\\s)(02|08|\\+?62)\\d{6,12}",
+                    advanced_phone:
+                        "\\(?(0([\\W_]{1,3})?2|0([\\W_]{1,3})?8|\\+?6([\\W_]{1,3})?2|nol([\\W_]{1,3})?dua|nol([\\W_]{1,3})?delapan|nol|kosong|zero|kosong([\\W_]{1,3})?dua|kosong([\\W_]{1,3})?delapan|zero([\\W_]{1,3})?two|zero([\\W_]{1,3})?eight)[\\d|nol|kosong|satu|dua|tiga|empat|lima|enam|tujuh|delapan|sembilan|zero|one|two|three|four|five|six|seven|eight|nine]*\\)?([-\\s\\.\\W_]{0,3}(\\d|nol|kosong|satu|dua|tiga|empat|lima|enam|tujuh|delapan|sembilan|zero|one|two|three|four|five|six|seven|eight|nine])){6,19}",
+                    email: "@((?:[\\w-]+\\.)*\\w[\\w-]{0,66})\\.([a-z]{2,6}(?:\\.[a-z]{2})?)",
+                    at_dot: "(@|\\[dot\\]|\\[at\\]|\\(dot\\)|\\(at\\))",
+                    url:
+                        "(((http|ftp|https):\\\/{2})*(([0-9a-z_-]+\\.)+(aero|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|ac|ad|ae|af|ag|ai|al|am|an|ao|aq|ar|as|at|au|aw|ax|az|ba|bb|bd|be|bf|bg|bh|bi|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|cr|cu|cv|cx|cy|cz|cz|de|dj|dk|dm|do|dz|ec|ee|eg|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gg|gh|gi|gl|gm|gn|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|im|in|io|iq|ir|is|it|je|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mk|ml|mn|mn|mo|mp|mr|ms|mt|mu|mv|mw|mx|my|mz|na|nc|ne|nf|ng|ni|nl|no|np|nr|nu|nz|nom|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|ps|pt|pw|py|qa|re|ra|rs|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sj|sk|sl|sm|sn|so|sr|st|su|sv|sy|sz|tc|td|tf|tg|th|tj|tk|tl|tm|tn|to|tp|tr|tt|tv|tw|tz|ua|ug|uk|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|yu|za|zm|zw|arpa)(:[0-9]+)?((\\\/([~0-9a-zA-Z\\#\\+\\%@\\.\\\/_-]+))?(\\?[0-9a-zA-Z\\+\\%@\\\/&\\[\\];=_-]+)?)?))\\b",
+                    sms_format: "#[ ]?([ #]?[\\w\\d]+[ ]?[ #][ ]?[\\w\\d]+[ ]?){3,10}#",
+                    ip_address: "(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])",
+                    pin_bbm: "(^| )bbm?[ ].*?add($| )|(^| )bmm[ ].*?pin($| )|(^| )pin[ ].*?bbm?($| )|(^| )pin[ ].*?add($| )|(^| )add[ ].*?pin($| )|(^| )add[ ].*?bbm?($| )",
+                };
+
+            //]]>
+        </script>
+        <script src="https://cdn03.jobs.id/asset/jobsid/js/filters/timeBeforeAutoFormat.js"></script>
+        <script src="https://cdn04.jobs.id/asset/jobsid/js/bookmark.js"></script>
+        <script async="async" src="https://widg.jobs.id/asset/jobsid/js/job_ads_widget/widg-all.js?v=1.0.1"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+        <script src="https://cdn04.jobs.id/asset/rms/js/jQuery-File-Upload-master/js/vendor/jquery.ui.widget.js"></script>
+        <script src="https://cdn04.jobs.id/asset/rms/js/jQuery-File-Upload-master/js/jquery.iframe-transport.js"></script>
+        <script src="https://cdn02.jobs.id/asset/rms/js/jQuery-File-Upload-master/js/jquery.fileupload.js"></script>
+        <script src="https://cdn02.jobs.id/asset/jobsid/js/cv-upload.js"></script>
+        <script src="https://cdn02.jobs.id/asset/jobsid/js/vendor/jsrender.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.min.js"></script>
+        <div class="modal modal-onboarding fade" id="modal-CV-upload" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" id="cv-body-upload">
+                        <div class="normal-cv-heading">
+                            <div class="default-cv-heading">
+                                <div class="cv-profile-incomplete hidden">
+                                    <h4 class="bold text-center">Upload CV Kamu Sekarang</h4>
+                                    <p class="text-center">
+                                        <span>Hai</span>
+                                        <strong></strong>
+                                        <span class="heading-message">, segera upload CV Anda agar bisa segera melamar pekerjaan.</span>
+                                    </p>
+                                </div>
+                                <div class="cv-profile-edit">
+                                    <h4 class="bold text-center">Upload CV</h4>
+                                    <p class="text-center">
+                                        <span>Hai</span>
+                                        <strong></strong>
+                                        <span class="heading-message">, upload CV Anda untuk melamar pekerjaan</span>
+                                    </p>
+                                </div>
+                                <div class="row job">
+                                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+                                        <img class="img-responsive" src="https://www.jobs.id/asset/jobsid/img/cv.png" />
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rejected-cv-heading hidden">
+                            <div class="default-cv-heading">
+                                <h4 class="bold text-center">CV Ditolak</h4>
+                                <p class="text-center">
+                                    <span>Hai</span>
+                                    <strong></strong>
+                                    <span>, Maaf, CV Anda belum memenuhi persyaratan.</span>
+                                </p>
+                                <div class="row job">
+                                    <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <img class="img-responsive" src="https://www.jobs.id/asset/jobsid/img/icon_cv_rejected.png" />
+                                                    </div>
+                                                    <div class="col-xs-9 no-padding-left">
+                                                        <h5 class="clear-bottom bold rejected-cv-filename">
+                                                            .
+                                                        </h5>
+                                                        <p class="text-gray small">
+                                                            <span>Uploaded</span>
+                                                            <span class="rejected-cv-date"></span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="error-cv-heading hidden">
+                            <h4 class="bold text-center">
+                                <i class="fa fa-exclamation-triangle text-warning"></i>
+                                Uploading Error!
+                            </h4>
+                            <p class="text-center js-cverror-info" id="js-error-type">Format File tidak didukung</p>
+                            <p class="text-center js-cverror-info" id="js-error-size">Ukuran Maksimal 5 MB</p>
+                            <div class="row job">
+                                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-xs-3">
+                                                    <img class="img-responsive" src="https://www.jobs.id/asset/jobsid/img/icon_cv_rejected.png" />
+                                                </div>
+                                                <div class="col-xs-9 no-padding-left">
+                                                    <h5 class="clear-bottom bold" id="js-cverror-file">-</h5>
+                                                    <p class="text-gray semi-bold" id="js-cverror-size">-</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p class="bold">Pastikan CV Anda:</p>
+                                <ol>
+                                    <li>Sesuai format .doc, .docx, .pdf</li>
+                                    <li>Ukuran file maksimal 5 MB</li>
+                                    <li>File tidak rusak</li>
+                                    <li>CV bukan milik orang lain</li>
+                                    <li>CV bukan diambil dari Job Portal lain</li>
+                                </ol>
+                                <div class="template-download">
+                                    <p class="text-center">
+                                        Agar lebih jelas, silakan download contoh CV yang baik dibawah ini:
+                                    </p>
+                                    <p class="text-center">
+                                        <a href="https://www.jobs.id/template/download_cv" target="_blank">
+                                            <i class="fa fa-fw fa-download"></i>
+                                            Download contoh CV
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <br />
+                            <div class="cv-upload-buttons">
+                                <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-block btn-default semi-bold text-gray" type="button" data-dismiss="modal">Batal</button>
+                                    <br />
+                                </div>
+                                <div class="col-xs-5 col-sm-4">
+                                    <form action="professional/xmlhttp_upload_cv/" method="POST" enctype="multipart/form-data">
+                                        <span class="btn btn-block btn-success fileinput-button semi-bold" type="button">
+                                            <i class="fa fa-upload"></i>
+                                            <span>Upload CV</span>
+                                            <input class="fileupload" id="upload_pdf" type="file" name="upload_pdf" />
+                                        </span>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="cv-reupload-buttons hidden">
+                                <div class="col-xs-5 col-xs-offset-1 col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-block btn-default semi-bold text-gray" type="button" data-dismiss="modal">Nanti Saja</button>
+                                    <br />
+                                </div>
+                                <div class="col-xs-5 col-sm-4">
+                                    <form action="professional/xmlhttp_upload_cv/" method="POST" enctype="multipart/form-data">
+                                        <span class="btn btn-block btn-warning fileinput-button semi-bold" type="button">
+                                            <span>Unggah Ulang CV</span>
+                                            <input class="fileupload" id="upload_pdf" type="file" name="upload_pdf" />
+                                        </span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body hidden" id="cv-body-progress">
+                        <h4 class="bold text-center">Uploading CV</h4>
+                        <p class="text-center">Mohon tunggu, CV Anda sedang diunggah.</p>
+                        <div class="row job">
+                            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <img class="img-responsive" src="https://www.jobs.id/asset/jobsid/img/icon_cv_uploading.png" />
+                                            </div>
+                                            <div class="col-xs-9 no-padding-left">
+                                                <h5 class="clear-bottom bold js-cv-filename">-</h5>
+                                                <div class="progress" id="progress">
+                                                    <div class="progress-bar progress-bar-default"></div>
+                                                    <div class="progress-bar progress-bar-success"></div>
+                                                    <p>Uploading...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <br />
+                            <div class="col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4">
+                                <button class="btn btn-block btn-default semi-bold text-gray" id="cv-cancel-upload" type="button" data-dismiss="modal">Cancel</button>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body hidden" id="cv-body-complete">
+                        <h4 class="bold text-center">Upload CV selesai</h4>
+                        <p class="text-center">
+                            <span>Terima Kasih</span>
+                            <strong></strong>
+                            <span>, CV kamu sedang kami review.</span>
+                        </p>
+                        <div class="row job">
+                            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <img class="img-responsive" src="https://www.jobs.id/asset/jobsid/img/icon_cv_uploaded.png" />
+                                            </div>
+                                            <div class="col-xs-9 no-padding-left">
+                                                <h5 class="clear-bottom bold js-cv-filename">-</h5>
+                                                <p class="text-gray semi-bold" id="js-cv-date"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <br />
+                            <div class="col-xs-6 col-xs-offset-3 col-md-4 col-md-offset-4">
+                                <form action="#">
+                                    <button class="btn btn-block btn-primary semi-bold" data-dismiss="modal" data-target="#cv-body-complete">OK</button>
+                                </form>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade in" id="modal_apply_limit" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="content-body">
+                            <h2 class="text-danger content-title text-center">
+                                <i class="fa fa-exclamation-circle">
+                                    <strong>
+                                        Upss...
+                                    </strong>
+                                </i>
+                            </h2>
+                            <div class="content-body">
+                                <p class="text-center">
+                                    Upss, Kami membatasi maksimal melamar 2 lowongan pada 1 perusahaan. Silahkan melamar pada perusahaan lain.
+                                </p>
+                                <button class="btn btn-warning btn-block btn-lg" data-dismiss="modal">
+                                    OKE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function () {
+                /** Popover Function */
+                $(document).on("click", ".location-more", function () {
+                    $(this).popover("show");
+                });
+
+                $(".location-more").popover({
+                    content: "",
+                    placement: "bottom",
+                    trigger: "manual",
+                });
+
+                $(".location-more").click(function (e) {
+                    $("#" + e.currentTarget.id).popover("toggle");
+                });
+
+                $("body").on("click", function (e) {
+                    $('[data-toggle="popover"]').each(function () {
+                        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $(".popover").has(e.target).length === 0) {
+                            $(this).popover("hide");
+                        }
+                    });
+                });
+
+                $(".share-toggle").popover({
+                    html: true,
+                    content: function () {
+                        return $(".popover-share").html();
+                    },
+                });
+
+                /** Company Gallery */
+                var current_img_id = 0;
+
+                var thumbnail_srcs = $.map($(".gallery img"), function (e) {
+                    return $(e).attr("ori");
+                });
+
+                var captions = $.map($(".gallery"), function (e) {
+                    return $(e).data("caption");
+                });
+
+                $(".btn-gallery-prev").click(function () {
+                    var src = thumbnail_srcs[current_img_id - 1];
+                    if (typeof src === "undefined") return;
+                    current_img_id -= 1;
+                    change_modal();
+                });
+
+                $(".btn-gallery-next").click(function () {
+                    var src = thumbnail_srcs[current_img_id + 1];
+                    if (typeof src === "undefined") return;
+                    current_img_id += 1;
+                    change_modal();
+                });
+
+                $("#gallery-modal").keydown(function (e) {
+                    var id = $(this).data("nid");
+                    // whether left or right key is pressed
+                    if (e.keyCode == 37) $(this).find(".btn-gallery-prev").click();
+                    else if (e.keyCode == 39) $(this).find(".btn-gallery-next").click();
+                });
+
+                $(".gallery").click(function (e) {
+                    $("#gallery-modal").modal("show");
+                    var img_id = $(this).data("imgIndex");
+                    current_img_id = img_id;
+                    change_modal();
+                });
+
+                $("#apply-button.not-logged-in").click(function (e) {
+                    $("#collapseLogin").collapse("show");
+                    if ($(".collapse.in")) $("html, body").animate({ scrollTop: 0 }, 1000);
+                    $('#collapseLogin input[name="redirect_to"]').val(window.location.href);
+                });
+
+                $(".bookmark-panel.not-logged-in .bookmark-button").click(function (e) {
+                    e.preventDefault();
+                    $("#collapseLogin").collapse("show");
+                    if ($(".collapse.in")) $("html, body").animate({ scrollTop: 0 }, 1000);
+                    $('#collapseLogin input[name="redirect_to"]').val(window.location.href);
+                });
+
+                function change_modal() {
+                    var src = thumbnail_srcs[current_img_id];
+                    $("#gallery-modal #img-modal").attr("src", src);
+
+                    var caption = captions[current_img_id];
+                    $(".modal-caption").text(caption);
+
+                    current_img_id >= thumbnail_srcs.length - 1 ? $("#gallery-modal .btn-gallery-next").hide() : $("#gallery-modal .btn-gallery-next").show();
+
+                    current_img_id <= 0 ? $("#gallery-modal .btn-gallery-prev").hide() : $("#gallery-modal .btn-gallery-prev").show();
+                }
+
+                $("#gallery-modal").on("shown.bs.modal", function (event) {
+                    $("body").css("padding-right", "0px");
+                });
+
+                changeCity();
+
+                $.ajax({
+                    url: "https://www.jobs.id/job/xmlhttp_log_job_view/156917",
+                });
+
+                // --
+                var templRelatedJobs = $.templates({
+                    markup: "#templRelatedJobs",
+                    allowCode: true,
+                });
+                var templModalRelatedJobs = $.templates({
+                    markup: "#templModalRelatedJobs",
+                    allowCode: true,
+                });
+
+                var dataCompany = [];
+                var jobid = 156917;
+                $.ajax({
+                    url: "/job/xmlhttp_get_related/" + jobid + "?start_from=0&limit=8",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (response) {
+                        if (response.data !== null) {
+                            dataFormater(response);
+                        }
+                    },
+                });
+
+                function dataFormater(item) {
+                    var companies = item.data;
+                    var temp = [];
+                    for (var i = 0; i < companies.length; i++) {
+                        if (moment().diff(moment(companies[i].start_at), "years") < 1) {
+                            var minNumber = companies[i].min_salary / 1000000.0;
+                            var minValue = minNumber >= 1 ? minNumber : minNumber * 1000000.0;
+                            var minSymbol = minNumber >= 1 ? "jt" : minNumber < 1 ? "" : "rb";
+                            var minPrecision = minValue % 1 === 0 ? 0 : 1;
+                            var minSalary = accounting.formatMoney(minValue, { symbol: minSymbol, format: "%v %s", thousand: ",", decimal: ".", precision: minPrecision });
+
+                            var maxNumber = companies[i].max_salary / 1000000.0;
+                            var maxValue = maxNumber >= 1 ? maxNumber : maxNumber * 1000000.0;
+                            var maxSymbol = maxNumber >= 1 ? "jt" : maxNumber < 1 ? "" : "rb";
+                            var maxPrecision = maxValue % 1 === 0 ? 0 : 1;
+                            var maxSalary = accounting.formatMoney(maxValue, { symbol: maxSymbol, format: "%v %s", thousand: ",", decimal: ".", precision: maxPrecision });
+
+                            var timeFormating = moment(companies[i].start_at).startOf("hour").fromNow();
+                            companies[i].MinSalary = minSalary;
+                            companies[i].MaxSalary = maxSalary;
+                            companies[i].StartAt = timeFormating;
+
+                            temp.push(companies[i]);
+                        }
+                    }
+                    item.data = temp;
+                    dataCompany.push(item);
+                    renderRelatedJobs();
+                    renderModalRelatedJobs();
+                }
+
+                function renderRelatedJobs() {
+                    var jsrenderRelatedJobs = templRelatedJobs.render(dataCompany);
+                    $("#relatedJobs").html(jsrenderRelatedJobs);
+                }
+
+                function renderModalRelatedJobs() {
+                    var jsModalRelatedJos = templModalRelatedJobs.render(dataCompany);
+                    $("#modalRelatedJobsSlick").html(jsModalRelatedJos);
+                }
+                // --
+
+                // $('#modalRelatedJobs').modal('show');
+
+                $(document).on("change", ".city-checkbox", function () {
+                    changeCity();
+                });
+
+                function changeCity() {
+                    if ($(".city-checkbox").filter(":checked").length) {
+                        $("#btn-apply-job-confirm").attr("disabled", false);
+                    } else {
+                        $("#btn-apply-job-confirm").attr("disabled", true);
+                    }
+                }
+
+                $(document).on("change", ".cityCheckbox", function (e) {
+                    var elmCities = $(this).parents(".select-city").find(".btnApplyAction");
+                    if ($(this).is(":checked")) {
+                        var selected = $(this).val();
+                        elmCities.attr("data-cities", function (i, origValue) {
+                            if (origValue) {
+                                return origValue + "," + selected;
+                            } else {
+                                return selected;
+                            }
+                        });
+                    } else {
+                        var unselected = $(this).val();
+                        elmCities.attr("data-cities", function (i, origValue) {
+                            var citiesString = origValue;
+                            var citiesArr = citiesString.split(",");
+                            for (var j = 0; j < citiesArr.length; j++) {
+                                if (citiesArr[j] == unselected) {
+                                    citiesArr.splice(j, 1);
+                                    break;
+                                }
+                            }
+                            return citiesArr.join(",");
+                        });
+                    }
+                });
+            });
+
+            $("#modal-CV-upload").modal({
+                backdrop: "static",
+                keyboard: false,
+                show: false,
+            });
+
+            $("#modal-disabled-apply").modal({
+                backdrop: "static",
+                keyboard: false,
+                show: false,
+            });
+            //]]>
+        </script>
+        <script type="application/ld+json">
+              {
+                "@context" : "http://schema.org/",
+                "@type" : "JobPosting",
+                "title" : "Accounting Staff",
+                "description" : "&lt;div data-pasted=&quot;1&quot;&gt;
+            &lt;ul&gt;
+            &lt;li&gt;Pria / wanita&lt;/li&gt;
+            &lt;li&gt;Maksimal 30 tahun&lt;/li&gt;
+            &lt;li&gt;Pendidikan S1 Akutansi&lt;/li&gt;
+            &lt;li&gt;Fresh graduate are welcome&lt;/li&gt;
+            &lt;li&gt;Mengerti jurnal &amp;amp; prinsip akuntansi&lt;/li&gt;
+            &lt;li&gt;Mengerti cash flow, laporan keuangan&lt;/li&gt;
+            &lt;li&gt;Teliti, detail dan disiplin&lt;/li&gt;
+            &lt;li&gt;Bisa bekerja dibawah tekanan&lt;/li&gt;
+            &lt;li&gt;Terbiasa dengan deadline&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;[Posisi Prioritas]",
+                "url" : "https://www.jobs.id/lowongan/MTU2OTE3/accounting-staff-riau-sakti-united-plantations-pt",
+                "identifier": {
+                  "@type": "PropertyValue",
+                  "name": "Riau Sakti United Plantations PT",
+                  "value": "MTU2OTE3" },
+                  "datePosted" : "2020-12-03T11:31:10+07:00",
+                  "validThrough" : "2020-12-13",
+                  "employmentType" : "FULL_TIME",
+                  "hiringOrganization" : {
+                    "@type" : "Organization",
+                    "name" : "Riau Sakti United Plantations PT",
+                    "sameAs" : "https://www.jobs.id/lowongan/MTU2OTE3/accounting-staff-riau-sakti-united-plantations-pt",
+                    "logo" : "kisikisi-root.nos.jkt-1.neo.id/assets/images/logo/riau_sakti_united_plantations_pt_1583889537.png"
+                  },
+                "jobLocation" : {
+                  "@type" : "Place",
+                  "geo" : {
+                    "@type" : "GeoCoordinates",
+                    "longitude" : "102.989615",
+                    "latitude" : "-0.1456733"
+                  },
+                  "address" : {
+                    "@type" : "PostalAddress",
+                    "streetAddress" : "",
+                    "addressLocality" : "Indragiri Hilir",
+                    "addressRegion" : "Indragiri Hilir",
+                    "postalCode" : "",
+                    "addressCountry": "ID"
+                  }
+                },
+                "baseSalary": {
+                  "@type": "MonetaryAmount",
+                  "currency": "IDR",
+                  "value": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 2700000,
+                    "value": 2700000,
+                    "maxValue": 3300000,
+                    "unitText": "MONTH"
+                  }
+                }
+              }
+        </script>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var needReviewResume = false;
+
+            var btnLocation;
+
+            $(document).on("click", ".btn-location", function (e) {
+                btnLocation = $(this);
+            });
+
+            $(document).on("click", ".btnApplyAction", function (e) {
+                e.preventDefault();
+                var thisElm = $(this);
+                var encodeId = thisElm.attr("data-encode");
+                var citiesString = thisElm.attr("data-cities");
+
+                if (citiesString) {
+                    var citiesArr = citiesString.split(",");
+                } else {
+                    var citiesArr = [];
+                }
+
+                // var action = thisElm.attr('data-action');
+
+                if (citiesArr.length < 1) {
+                    alert("Silahkan pilih kota terlebih dahulu!");
+                } else {
+                    // applyActionAjax(thisElm, jobsId, idUss, citiesArr, action);
+                    actualSubmitApplication(thisElm, citiesArr, encodeId);
+                }
+            });
+
+            function submitApplicationForm() {
+                $.ajax({
+                    method: "POST",
+                    url: "https://www.jobs.id/job/xmlhttp_incomplete_profile/MTU2OTE3",
+                    beforeSend: function () {
+                        $(".js-track-apply").append('<i class="fa fa-spinner fa-pulse fa-fw"></i>').prop("disabled", true);
+                    },
+                    success: function (response) {
+                        var cv_modal = $("#modal-CV-upload");
+                        var block_modal = $("#modal-disabled-apply");
+
+                        $(".js-track-apply").prop("disabled", false).children("i.fa").remove();
+
+                        cv_modal.find(".rejected-cv-heading").addClass("hidden");
+                        cv_modal.find(".normal-cv-heading").removeClass("hidden");
+                        cv_modal.find(".template-download").removeClass("hidden");
+                        cv_modal.find(".cv-reupload-buttons").addClass("hidden");
+                        cv_modal.find(".cv-upload-buttons").removeClass("hidden");
+                        cv_modal.find(".cv-profile-incomplete").addClass("hidden");
+                        cv_modal.find(".cv-profile-edit").removeClass("hidden");
+
+                        if (response.success && response.profile_completion_interrupt) {
+                            if (response.rejected_cv) {
+                                var cv = response.rejected_cv;
+                                cv_modal.find(".rejected-cv-heading").removeClass("hidden");
+                                cv_modal.find(".normal-cv-heading").addClass("hidden");
+                                cv_modal.find(".template-download").addClass("hidden");
+                                cv_modal.find(".cv-reupload-buttons").removeClass("hidden");
+                                cv_modal.find(".cv-upload-buttons").addClass("hidden");
+
+                                cv_modal.find(".rejected-cv-date").text(cv.formattedDate);
+                                cv_modal.find(".rejected-cv-filename").text(cv.formattedPath);
+                                cv_modal.modal("show");
+                            } else if (response.cv_only) {
+                                cv_modal.find(".cv-profile-incomplete").removeClass("hidden");
+                                cv_modal.find(".cv-profile-edit").addClass("hidden");
+                                cv_modal.modal("show");
+                            } else if (response.incomplete) {
+                                var incompletes = response.incomplete_data["list"];
+                                block_modal.find("#redirect-url").attr("value", response.incomplete_data["url"]);
+                                for (var i = 0; i < incompletes.length; i++) {
+                                    var text = (i + 1).toString() + ". " + incompletes[i];
+                                    block_modal.find("#js-incomplete-list").append("<span>" + text + "</span>");
+                                    if (i < incompletes.length - 1) {
+                                        block_modal.find("#js-incomplete-list").append("<br>");
+                                    }
+                                }
+                                block_modal.modal("show");
+                            } else if (needReviewResume) {
+                                $("#modalReviewResume")
+                                    .modal("show")
+                                    .on("hidden.bs.modal", function () {
+                                        var skipReviewResume = $("#skipReviewResume").is(":checked");
+
+                                        if (skipReviewResume) {
+                                            $.ajax({
+                                                method: "POST",
+                                                url: "https://www.jobs.id/user/xmlhttp_skip_review_resume",
+                                            });
+
+                                            needReviewResume = false;
+                                        }
+
+                                        $(this).off();
+                                    });
+                            } else {
+                                // document.applicationForm.submit();
+                                actualSubmitApplication();
+                            }
+                        } else {
+                            block_modal.find("#redirect-url").attr("value", response.profile_completion_url);
+                            block_modal.modal("show");
+                        }
+                    },
+                });
+            }
+
+            function reviewSubmitApplicationForm(param) {
+                var skipReviewResume = $("#skipReviewResume").is(":checked");
+
+                if (skipReviewResume) {
+                    $.ajax({
+                        method: "POST",
+                        url: "https://www.jobs.id/user/xmlhttp_skip_review_resume",
+                    });
+                }
+                actualSubmitApplication(param);
+                // document.applicationForm.submit();
+            }
+
+            function actualSubmitApplication(elmBtn, cities, encodedId) {
+                var elmButton = $(elmBtn);
+                if (elmButton.data("action") === "modal-apply") {
+                    var encodedId = encodedId;
+                    var citiesArr = cities;
+                } else {
+                    var formSerialize = $("form[name=applicationForm]").serialize();
+                    var encodedId = "MTU2OTE3";
+                }
+
+                $.ajax({
+                    url: "/job/apply/" + encodedId,
+                    type: "POST",
+                    data: formSerialize ? formSerialize : { chosen_cities: citiesArr, applyVia: "jobRecommendation" },
+                    beforeSend: function () {
+                        $(".btn-location, .btnApplyAction").attr("disabled", true);
+                        elmButton.append('<i class="fa fa-spinner fa-pulse fa-fw"></i>').attr("disabled", true);
+                    },
+                    success: function (response) {
+                        var test = response.test;
+
+                        pushData("apply");
+                        popUpAsPage();
+                        $(".btn-location, .btnApplyAction").prop("disabled", false).children("i.fa").remove();
+                        if (elmButton.attr("data-action") === "modal-apply") {
+                            $(".select-city").popover("destroy");
+                            elmButton.remove();
+                            if (btnLocation) {
+                                btnLocation.remove();
+                            } else {
+                                // elmButton.remove();
+                            }
+                            alert("Berhasil! Lamaran Terkirim.");
+                        } else {
+                            var $reviewResumeModal = $("#modalReviewResume");
+                            var $relatedJobsModal = $("#modalRelatedJobs");
+
+                            $(".js-track-apply").remove();
+
+                            if (test) {
+                                $relatedJobsModal.find("#fireworkImg").addClass("hidden");
+                                $relatedJobsModal.find("#modalRelatedJobsSlick").addClass("hidden");
+                                $relatedJobsModal.find("#testContent").html(test).removeClass("hidden");
+
+                                var $testForm = $relatedJobsModal.find("#testContent").find("form");
+                                var $testSubmit = $testForm.find("#btn-submit-admin");
+                                var $testSkip = $testForm.find("#btn-skip-admin");
+
+                                $testSkip.click(function () {
+                                    $testForm.attr("action", $testForm.data("skipAction"));
+                                    $testForm.submit();
+                                });
+
+                                $testForm.on("submit", function (e) {
+                                    e.preventDefault();
+
+                                    $.ajax({
+                                        method: "POST",
+                                        url: $testForm.attr("action"),
+                                        data: $testForm.serialize(),
+                                        beforeSend: function () {
+                                            $testSubmit.attr("disabled", true);
+                                            $testSubmit.text("");
+                                            $testSubmit.append('<i class="fa fa-spinner fa-pulse fa-fw"></i>');
+
+                                            $testSkip.attr("disabled", true);
+                                            $testSkip.text("");
+                                            $testSkip.append('<i class="fa fa-spinner fa-pulse fa-fw"></i>');
+                                        },
+                                        success: function () {
+                                            $relatedJobsModal.find("#testContent").remove();
+                                            $relatedJobsModal.find("#modalRelatedJobsSlick").removeClass("hidden");
+                                        },
+                                        failure: function () {
+                                            $relatedJobsModal.find("#testContent").remove();
+                                            $relatedJobsModal.find("#modalRelatedJobsSlick").removeClass("hidden");
+                                        },
+                                    });
+                                });
+                            }
+
+                            if ($reviewResumeModal.length === 0) {
+                                $relatedJobsModal.modal({
+                                    show: true,
+                                    keyboard: false,
+                                    backdrop: "static",
+                                });
+                            } else {
+                                $reviewResumeModal.modal("hide");
+                                $reviewResumeModal.on("hidden.bs.modal", function () {
+                                    $relatedJobsModal.modal({
+                                        show: true,
+                                        keyboard: false,
+                                        backdrop: "static",
+                                    });
+                                });
+                            }
+                        }
+                    },
+                    error: function (xhr, statusText, error) {
+                        $(".select-city").popover("hide");
+                        $(".btn-location, .btnApplyAction").prop("disabled", false).children("i.fa").remove();
+                        elmButton.children("i.fa").remove();
+                        elmButton.removeAttr("disabled");
+                        var block_apply_limit = $("#modal_apply_limit");
+                        var reviewResumeModal = $("#modalReviewResume");
+
+                        if (xhr.responseJSON.error === "apply_limit") {
+                            reviewResumeModal.modal("hide");
+                            block_apply_limit.modal("show");
+                        } else {
+                            alert(xhr.responseJSON.error);
+                        }
+                    },
+                });
+            }
+
+            $("#modalRelatedJobs").on("shown.bs.modal", function () {
+                $(".slick-related-jobs").slick({
+                    dots: false,
+                    infinite: false,
+                    speed: 300,
+                    slidesToShow: 4,
+                    centerPadding: "60px",
+                    // variableWidth: true,
+                    prevArrow: '<a role="button" class="slick-prev"><i class="fa fa-chevron-left"></i></a>',
+                    nextArrow: '<a role="button" class="slick-next"><i class="fa fa-chevron-right"></i></a>',
+                });
+            });
+
+            //]]>
+        </script>
+        <script src="//static.criteo.net/js/ld/ld.js" async="true"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            window.criteo_q = window.criteo_q || [];
+            window.criteo_q.push({ event: "setAccount", account: 27943 }, { event: "setHashedEmail", email: "" }, { event: "setSiteType", type: getDeviceType() }, { event: "viewItem", item: "MTU2OTE3" });
+            $(".js-track-apply").click(function () {
+                window.criteo_q = window.criteo_q || [];
+                window.criteo_q.push(
+                    { event: "setAccount", account: 27943 },
+                    { event: "setHashedEmail", email: "" },
+                    { event: "setSiteType", type: getDeviceType() },
+                    { event: "trackTransaction", id: "MTU2OTE3-1606970403-1412261391", item: [{ id: "MTU2OTE3", price: 1, quantity: 1 }] }
+                );
+            });
+
+            //]]>
+        </script>
+        <script id="templRelatedJobs" type="text/x-jsrender">
+            {{if data !== null}}
+            <div class="panel panel-default panel-related-jobs">
+              <div class="panel-heading">
+                <h4 class="bold">
+                  <i class="fa fa-briefcase text-muted"></i>
+                  Lowongan Kerja Serupa
+                </h4>
+              </div>
+              <div class="panel-body">
+                {{for data}}
+                <div class="media">
+                  <div class="media-left">
+                    {{if company_logo}}
+                    <img src="{^{>url:company_logo}}" style="max-width:60px; height:60px; object-fit:contain;">
+                    {{else}}
+                    <img src="https://cdn02.jobs.id/asset/jobsid/img/building2.png" style="max-width:60px; height:60px; object-fit:contain;">
+                    {{/if}}
+                  </div>
+                  <div class="media-body">
+                    <h4 class="clear-both">
+                      <a class="bold btnTracker" href="/lowongan/{{*:data.link.slice(10)}}" data-t-email="guest" data-t-value="related-job-{{*:data.job_ads_id}}" data-t-tag="link-related-job-desktop" data-encode="{{*:data.link.slice(10)}}" target="_blank">{{:job_title}}</a>
+                    </h4>
+                    {{if company_name}}
+                    <p class="clear-bottom">{{:company_name}}</p>
+                    {{else}}
+                    <p class="clear-bottom"></p>
+                    <strong class="text-muted">Perusahaan Dirahasiakan</strong>
+                    {{/if}}
+                    {{if MinSalary !== '0 ' || MaxSalary !== '0 '}}
+                    <p class="text-success clear-bottom">
+                      IDR
+                      {{if MinSalary !== '0 '}}
+                      {{:MinSalary}}
+                      {{/if}}
+                      {{if MaxSalary === '0 '}}
+                      min
+                      {{/if}}
+                      {{if MinSalary !== '0 ' && MaxSalary !== '0 '}}
+                       -
+                      {{/if}}
+                      {{if MaxSalary !== '0 '}}
+                      {{:MaxSalary}}
+                      {{/if}}
+                      {{if MinSalary === '0 '}}
+                      max
+                      {{/if}}
+                    </p>
+                    {{else}}
+                    <p class="semi-bold text-gray clear-bottom">
+                      Gaji Dirahasiakan
+                    </p>
+                    {{/if}}
+                    <p class="clear-bottom">
+                      {^{if cities.length > 1}}
+                      {{*:data.cities[0].name}}
+                      dan
+                      <a class="location-more" role="button" data-toggle="popover" data-container="body" data-placement="bottom" data-content="{{*:data.cities}}" data-template="<div class='popover' role='tooltip' style='z-index: 1661;'><div class='arrow'></div><div class='popover-body popover-body-jobs popover-widget' style='padding-top:12px !important;'><div class='popover-content-jobs'><div class='row'>{{* for (i=1; i<data.cities.length; i++) { }}<div class='cities-name col-xs-6'>{{*:data.cities[i].name}}</div>{{* } }}</div></div></div></div>">
+                        {{*:data.cities.length - 1 }} kota lainnya
+                      </a>
+                      {{else}}
+                      {{*:data.cities[0].name}}
+                      {{/if}}
+                    </p>
+                    <p class="clear-bottom">
+                      <i class="fa fa-clock-o"></i>
+                      {{:StartAt}}
+                    </p>
+                  </div>
+                </div>
+                {{/for}}
+              </div>
+            </div>
+            {{/if}}
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            function trackConversionEvent(cv) {
+                window._fbq.push(["track", "6024674459237", { value: "0.00", currency: "IDR" }]);
+                console.log("facebook conversion pixel pushed cv " + cv);
+            }
+            var debug_google_track_upload_cv = true;
+            function googleTrackUploadCV(user_cv_id) {
+                var src = "//www.googleadservices.com/pagead/conversion/956107441/?label=9OcuCKzs3FwQsZX0xwM&guid=ON&script=0";
+                var image = new Image(1, 1);
+                image.src = src;
+                if (debug_google_track_upload_cv) {
+                    console.log("google adservice executed - upload cv " + user_cv_id);
+                }
+                if (typeof ga == "function") {
+                    ga("send", {
+                        hitType: "event",
+                        eventCategory: "form",
+                        eventAction: "submit",
+                        eventLabel: "upload_cv",
+                        eventValue: user_cv_id,
+                    });
+                    if (debug_google_track_upload_cv) {
+                        console.log("google analytics executed - upload cv " + user_cv_id);
+                    }
+                }
+            }
+            //]]>
+        </script>
+        <!-- * global changeFrontendHostLinkExtras */ -->
+        <script type="text/javascript">
+            //<![CDATA[
+            var pattern = null;
+            var toBeReplaced = "https:\/\/www.jobs.id\/";
+            var replacement = "https:\/\/www.jobs.id\/";
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            function changeFrontendHostLink() {
+                pattern = pattern ? pattern : "a";
+                $(pattern).each(function (i, e) {
+                    var element = $(e);
+                    var originalLink = element.attr("href");
+                    if (originalLink) {
+                        var newLink = originalLink.replace(toBeReplaced, replacement);
+                        element.attr("href", newLink);
+                    }
+                });
+                if (typeof changeFrontendHostLinkExtras !== "undefined") {
+                    changeFrontendHostLinkExtras();
+                }
+            }
+            changeFrontendHostLink();
+
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            (function (e, a) {
+                if (!a.__SV) {
+                    var b = window;
+                    try {
+                        var c,
+                            l,
+                            i,
+                            j = b.location,
+                            g = j.hash;
+                        c = function (a, b) {
+                            return (l = a.match(RegExp(b + "=([^&]*)"))) ? l[1] : null;
+                        };
+                        g &&
+                            c(g, "state") &&
+                            ((i = JSON.parse(decodeURIComponent(c(g, "state")))), "mpeditor" === i.action && (b.sessionStorage.setItem("_mpcehash", g), history.replaceState(i.desiredHash || "", e.title, j.pathname + j.search)));
+                    } catch (m) {}
+                    var k, h;
+                    window.mixpanel = a;
+                    a._i = [];
+                    a.init = function (b, c, f) {
+                        function e(b, a) {
+                            var c = a.split(".");
+                            2 == c.length && ((b = b[c[0]]), (a = c[1]));
+                            b[a] = function () {
+                                b.push([a].concat(Array.prototype.slice.call(arguments, 0)));
+                            };
+                        }
+                        var d = a;
+                        "undefined" !== typeof f ? (d = a[f] = []) : (f = "mixpanel");
+                        d.people = d.people || [];
+                        d.toString = function (b) {
+                            var a = "mixpanel";
+                            "mixpanel" !== f && (a += "." + f);
+                            b || (a += " (stub)");
+                            return a;
+                        };
+                        d.people.toString = function () {
+                            return d.toString(1) + ".people (stub)";
+                        };
+                        k = "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(
+                            " "
+                        );
+                        for (h = 0; h < k.length; h++) e(d, k[h]);
+                        a._i.push([b, c, f]);
+                    };
+                    a.__SV = 1.2;
+                    b = e.createElement("script");
+                    b.type = "text/javascript";
+                    b.async = !0;
+                    b.src =
+                        "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL
+                            ? MIXPANEL_CUSTOM_LIB_URL
+                            : "file:" === e.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)
+                            ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"
+                            : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+                    c = e.getElementsByTagName("script")[0];
+                    c.parentNode.insertBefore(b, c);
+                }
+            })(document, window.mixpanel || []);
+            mixpanel.init("2fbb40da1cdc2cae174a17959c6cd28e");
+
+            //]]>
+        </script>
+        <script type="text/javascript">
+            setTimeout(function () {
+                var a = document.createElement("script");
+                var b = document.getElementsByTagName("script")[0];
+                a.src = document.location.protocol + "//script.crazyegg.com/pages/scripts/0046/5409.js?" + Math.floor(new Date().getTime() / 3600000);
+                a.async = true;
+                a.type = "text/javascript";
+                b.parentNode.insertBefore(a, b);
+            }, 1);
+        </script>
+    </body>
+</html>
