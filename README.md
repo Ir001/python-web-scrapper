@@ -1,5 +1,5 @@
 # Python Web Scrapper
-Belajar implementasi Python pada studi kasus scrapping website menggunakan module requests dan beautyfullsoup4.
+Belajar implementasi Python pada studi kasus scrapping website menggunakan module requests dan beautifullsoup4.
 
 ### Installation
 ```sh
